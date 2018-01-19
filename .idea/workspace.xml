@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1aa61335-83ac-47fd-8657-48e265a59e5c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.eslintrc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/spadishop.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/AdminLTE.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css.map.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/easy-responsive-tabs.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/flexslider.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/font-awesome.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/froala_editor.pkgd.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/froala_style.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/main.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/skinBlue.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/css/team.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/ab_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/arrow.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/b1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/b2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/b3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/b4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/b5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/b6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/b7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/b8.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/banner1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/banner2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/banner3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/banner4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/banner5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/bb1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/bb2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/bot_1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/bot_2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/bottom1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/bottom2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/bottom3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/bottom4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/btn_next.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/btn_pause.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/btn_play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/btn_prev.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/close_1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/d1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/d2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/d3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/inner1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/inner2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/log_pic.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/m1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/m2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/m3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/m4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/m5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/m6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/m7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/m8.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/mark1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/mid.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/s1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/s2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/s3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/s4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/s5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/s6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/s7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/s8.jpeg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/s8.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/search.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/t1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/t2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/t3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/t4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/tick-mark1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/top1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/top2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/up_arrow.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/w1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/w2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/w3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/w4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/w5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/w6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/w7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/w8.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/copilot-logo-white.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/default-none.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/gif/hintPickChain.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/gif/newChain.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/img-plus.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/logo_blk.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/logo_blk_sm.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/logo_sm.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/svg/cover.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/img/svg/white.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/easy-responsive-tabs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/imagezoom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery-2.1.4.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery-ui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.countup.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.easing.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.flexslider.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.waypoints.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/minicart.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/modernizr.custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/move-top.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/plugins/pace/froala_editor.pkgd.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/plugins/pace/pace.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/plugins/pace/pace.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/plugins/pace/pace.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/plugins/pace/pace.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/responsiveslides.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/App.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/Dash.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/Logo.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/Sidebar.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/SidebarMenu.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/button.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/buttonGreen.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/getCode.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/hintPickChain.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/myTextEditor.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/layouts/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/layouts/default.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/checkLoginClient.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/isLoginClient.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/isManager.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/islogin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/loginadmin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/userlogin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/nuxt.config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/coupon/chi-tiet.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/coupon/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/cua-hang/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/deal/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/dia-diem/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/dang-ky.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/dang-nhap.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/danh-sach.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/tao-moi.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/chuoi-cua-hang/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/danh-sach.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/tao-moi.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/danh-sach.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/tao-moi.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/danh-sach.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/tao-moi.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/quen-mat-khau.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/xac-thuc.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/tin-tuc/index2.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plugins/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plugins/default.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plugins/element-ui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plugins/main.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plugins/moment.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plugins/nuxt-quill-plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/plugins/vue-wysiwyg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/spadishop.rar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/.gitkeep" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/AdminLTE.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css.map.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/customize.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/easy-responsive-tabs.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/flexslider.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/font-awesome.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/froala_editor.pkgd.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/froala_style.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/magnific-popup.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/owl.carousel.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/pline.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/skinBlue.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/css/team.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/connect.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/fonts/pline.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/copilot-logo-white.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/logo_blk.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/logo_blk_sm.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/logo_sm.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/easy-responsive-tabs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/imagezoom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery-2.1.4.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery-ui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.countup.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.easing.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.flexslider.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.waypoints.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/minicart.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/modernizr.custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/move-top.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/AdminLTE/app.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/bootstrap/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/chartjs/Chart.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/chartjs/Chart.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/bootstrap-datepicker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/datepicker3.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.ka.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.kk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.kr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.ms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.nl-BE.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.pt-BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.rs-latin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.rs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.sw.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.ua.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/datepicker/locales/bootstrap-datepicker.zh-TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/jQuery/jQuery-2.2.0.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/jvectormap/jquery-jvectormap-2.0.3.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/jvectormap/jquery-jvectormap-world-mill.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/pace/froala_editor.pkgd.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/pace/pace.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/pace/pace.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/pace/pace.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/pace/pace.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/ms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/pt-BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/sr-Cyrl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/zh-CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/i18n/zh-TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/select2.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/select2.full.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/select2.full.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/select2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/select2.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/plugins/select2/select2.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/responsiveslides.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/store/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/store/index.js" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="nuxt.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nuxt.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="80" column="34" lean-forward="false" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chi-tiet.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/index/coupon/chi-tiet.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.header ul li i</find>
+      <find>top</find>
+      <find>.navbar-default .navbar-toggle</find>
+      <find>menu__item</find>
+      <find>lett</find>
+      <find>letter-spacing: 2px;</find>
+      <find>a.menu__link</find>
+      <find>.navbar-nav &gt; li &gt; a</find>
+      <find>.menu__item</find>
+      <find>input-num</find>
+      <find>more</find>
+      <find>port</find>
+      <find>local</find>
+      <find>host</find>
+      <find>Đăng nha</find>
+      <find>foo</find>
+      <find>listDeal</find>
+      <find>dialogAddShop</find>
+      <find>http://spadi.v</find>
+      <find>or</find>
+      <find>14px</find>
+      <find>quan-tri</find>
+      <find>$store</find>
+      <find>cf</find>
+      <find>token.</find>
+      <find>_id</find>
+      <find>listShop</find>
+      <find>listC</find>
+      <find>aler</find>
+      <find>Đăng nhập</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>nuxt-link</replace>
+      <replace>router-link</replace>
+      <replace>email</replace>
+      <replace>addShop</replace>
+      <replace>danh-sach</replace>
+      <replace>listDeal</replace>
+      <replace>.8s</replace>
+      <replace>m_getListDealOfChain</replace>
+      <replace>~/assets/</replace>
+      <replace>listCoupon</replace>
+      <replace>dialogAddCoupon</replace>
+      <replace>dialogAddDeal</replace>
+      <replace>tai-khoan</replace>
+      <replace>cookies.</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pages/quan-tri/index/deal/quill.js" />
+        <option value="$PROJECT_DIR$/plugins/nuxt-quill-plugin.js" />
+        <option value="$PROJECT_DIR$/plugins/element-ui.js" />
+        <option value="$PROJECT_DIR$/plugins/moment.js" />
+        <option value="$PROJECT_DIR$/components/hintPickChain.vue" />
+        <option value="$PROJECT_DIR$/components/SidebarMenu.vue" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/pages/tin-tuc/index2.vue" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/index/deal/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/static/fonts/connect.css" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/index/coupon/index.vue" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/index/coupon/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/index/shop/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/index/deal/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/index/coupon/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/pages/index/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/cua-hang/index.vue" />
+        <option value="$PROJECT_DIR$/components/buttonGreen.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/index.vue" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/404.vue" />
+        <option value="$PROJECT_DIR$/middleware/isManager.js" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/dang-ky.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/quen-mat-khau.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/xac-thuc.vue" />
+        <option value="$PROJECT_DIR$/middleware/isLoginClient.js" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/middleware/checkLoginClient.js" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/dang-nhap.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/static/css/customize.css" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/deal/index.vue" />
+        <option value="$PROJECT_DIR$/plugins/main.js" />
+        <option value="$PROJECT_DIR$/components/getCode.vue" />
+        <option value="$PROJECT_DIR$/pages/index/coupon/index.vue" />
+        <option value="$PROJECT_DIR$/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/store/index.js" />
+        <option value="$PROJECT_DIR$/pages/index/dia-diem/index.vue" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/dang-nhap.vue" />
+        <option value="$PROJECT_DIR$/pages/index/coupon/chi-tiet.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="39" />
+    <option name="y" value="23" />
+    <option name="width" value="1386" />
+    <option name="height" value="713" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="coupon" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dia-diem" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="store" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="D:\HappyCode\spadishop\node_modules\eslint" />
+    <property name="standardjs.codestyle.accepted" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\HappyCode\spadishop\pages\index\tai-khoan" />
+      <recent name="D:\HappyCode\spadishop\components" />
+      <recent name="D:\HappyCode\spadishop\pages\quan-tri\index" />
+      <recent name="D:\HappyCode\spadishop\static\fonts" />
+      <recent name="D:\HappyCode\spadishop\pages\quan-tri\index\deal" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\HappyCode\spadishop\pages\index" />
+      <recent name="D:\HappyCode\spadishop\assets\img\gif" />
+      <recent name="D:\HappyCode\spadishop\assets\js\plugins\pace" />
+      <recent name="D:\HappyCode\spadishop\static\js\plugins\pace" />
+      <recent name="D:\HappyCode\spadishop\static\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1aa61335-83ac-47fd-8657-48e265a59e5c" name="Default" comment="" />
+      <created>1515400504328</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1515400504328</updated>
+      <workItem from="1515400507059" duration="6000" />
+      <workItem from="1515400536225" duration="7654000" />
+      <workItem from="1515410222838" duration="4271000" />
+      <workItem from="1515465886518" duration="85000" />
+      <workItem from="1515465990440" duration="18631000" />
+      <workItem from="1515491097977" duration="102000" />
+      <workItem from="1515491221954" duration="3265000" />
+      <workItem from="1515553265251" duration="7104000" />
+      <workItem from="1515560482855" duration="18780000" />
+      <workItem from="1515636795293" duration="58987000" />
+      <workItem from="1515809129911" duration="25385000" />
+      <workItem from="1515982241167" duration="1917000" />
+      <workItem from="1515999357218" duration="8574000" />
+      <workItem from="1516068330625" duration="6403000" />
+      <workItem from="1516075083237" duration="11816000" />
+      <workItem from="1516156701392" duration="24417000" />
+      <workItem from="1516241896889" duration="30707000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="228104000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="39" y="23" width="1386" height="713" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20437406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Storybook" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24976873" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780847" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14932127" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24976873" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Storybook" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780847" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="27" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index/coupon/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index/deal/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="105" column="64" lean-forward="true" selection-start-line="105" selection-start-column="64" selection-end-line="105" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="857" column="1" lean-forward="false" selection-start-line="857" selection-start-column="1" selection-end-line="857" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index/coupon/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index/shop/danh-sach.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index/deal/danh-sach.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index/coupon/danh-sach.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index/shop/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="210" selection-start-column="22" selection-end-line="236" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/button.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/SidebarMenu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="120" column="8" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
+          <folding>
+            <element signature="n#ul#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Sidebar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="74" column="53" lean-forward="false" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="114" lean-forward="false" selection-start-line="0" selection-start-column="114" selection-end-line="0" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/deal/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/404.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/loginadmin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#31#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/islogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#31#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/isManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#31#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/dang-ky.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="152" column="38" lean-forward="false" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+          <folding>
+            <element signature="n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/quen-mat-khau.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/xac-thuc.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="58" column="38" lean-forward="false" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+          <folding>
+            <element signature="n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/isLoginClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/shop/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index/chuoi-cua-hang/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/chain/danh-sach.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="63" column="9" lean-forward="false" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/checkLoginClient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/chain/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/shop/danh-sach.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/chain/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#el-row#0;n#div#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#el-row#1;n#div#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#el-tabs#0;n#div#2;n#el-row#1;n#div#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#el-tab-pane#1;n#el-tabs#0;n#div#2;n#el-row#1;n#div#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#11938#12996#0" expanded="false" />
+            <element signature="e#13016#13818#0" expanded="false" />
+            <element signature="e#13842#14027#0" expanded="false" />
+            <element signature="e#14047#14111#0" expanded="false" />
+            <element signature="e#14130#22554#0" expanded="false" />
+            <element signature="e#14160#14230#0" expanded="false" />
+            <element signature="e#14266#14326#0" expanded="false" />
+            <element signature="e#14363#14424#0" expanded="false" />
+            <element signature="e#14465#14648#0" expanded="false" />
+            <element signature="e#15578#15765#0" expanded="false" />
+            <element signature="e#15794#16669#0" expanded="false" />
+            <element signature="e#16699#17081#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/dang-nhap.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/customize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="167" column="37" lean-forward="true" selection-start-line="167" selection-start-column="37" selection-end-line="167" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="177" column="10" lean-forward="false" selection-start-line="177" selection-start-column="10" selection-end-line="177" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#grebtn#0;n#div#4;n#div#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#7606#7628#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/deal/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="148" column="45" lean-forward="false" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#grebtn#0;n#div#4;n#div#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="80" column="41" lean-forward="false" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#11605#11790#0" expanded="false" />
+            <element signature="e#11839#11909#0" expanded="false" />
+            <element signature="e#11945#12005#0" expanded="false" />
+            <element signature="e#12042#12103#0" expanded="false" />
+            <element signature="e#12144#12327#0" expanded="false" />
+            <element signature="e#13257#13444#0" expanded="false" />
+            <element signature="e#13473#14348#0" expanded="false" />
+            <element signature="e#14378#14760#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/shop/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="327" column="22" lean-forward="false" selection-start-line="327" selection-start-column="22" selection-end-line="327" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/deal/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="186" column="82" lean-forward="false" selection-start-line="186" selection-start-column="82" selection-end-line="186" selection-end-column="82" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/buttonGreen.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="106" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/getCode.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#button#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/coupon/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-380">
+          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding>
+            <element signature="e#327#369#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1472">
+          <caret line="520" column="5" lean-forward="false" selection-start-line="520" selection-start-column="5" selection-end-line="526" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/dang-nhap.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/dia-diem/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="80" column="34" lean-forward="false" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/coupon/chi-tiet.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

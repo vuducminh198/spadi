@@ -1,0 +1,118 @@
+.el-notification, .el-message-box,  .el-input__inner,.el-dialog,.el-textarea__inner,.el-select-dropdown,.el-button {
+    border-radius: 0 !important;
+}
+.el-checkbox__inner{
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 0!important;
+}
+.el-checkbox__inner::after{
+    width: 4px !important;
+    left: 7px !important;
+    top: 3px !important;
+}
+.el-notification__content{
+    font-size: 13px!important;
+    font-family: 'Source Sans Pro' !important;
+}
+.el-button--small span {
+    font-size: 14px !important;
+}
+.el-tabs__item:hover,.el-tabs__item.is-active{
+    color: #ff5151 !important;
+}
+.el-tabs__active-bar{
+    background-color:#FF5151!important;
+}
+
+.el-button--primary:focus, .el-button--primary:hover{
+    background-color:#FF8080!important;
+}
+.el-button--primary.is-active, .el-button--primary:active,.el-button--primary{
+    background-color:#FF5151!important;
+    border-color:#FF5151!important;
+}
+.el-dialog__title{
+    color:black!important;
+    text-transform: uppercase!important;
+    font-size: 16px!important;
+}
+.el-dialog__body{
+    padding-top: 10px !important;
+}
+.alert {
+    background-color: white !important;
+    border: 0;
+    color: black !important;
+}
+
+.alert-success {
+    border-top: 3px solid #00A65A !important;
+}
+
+.alert-warning {
+    border-top: 3px solid #F39C12 !important;
+}
+
+.alert-error {
+    border-top: 3px solid #DD4B39 !important;
+}
+
+.el-message-box__content {
+    color: black !important
+}
+.svg-success path {
+      stroke-dasharray:17px, 17px;
+      stroke-dashoffset: 0px;
+      -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+      animation: checkmark 0.25s ease-in-out 0.7s backwards;
+  }
+.svg-success circle {
+      stroke-dasharray:76px, 76px;
+      stroke-dashoffset: 0px;
+      transform:rotate(-90deg);
+      transform-origin: 50% 50%;
+      -webkit-animation: checkmark-circle 0.6s ease-in-out forwards;
+      animation: checkmark-circle 0.6s ease-in-out forwards;
+  }
+.svg-success {
+    stroke-width: 2px;
+    stroke: #8EC343;
+    fill:none;
+}
+
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 17px;
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 76px;
+    }
+
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+.cusbtn{
+    background-color:rgba(45,45,48,.05)!important;;
+    margin-bottom: 5px !important;
+    color:rgba(45,45,48,.4) !important;
+}
+
+.cusbtn{
+    color:rgba(45,45,48,.9) !important;
+}
+.mt-8{
+    margin-top:8px;
+}
+.container-q{
+    font-family: 'Source Sans Pro' !important;
+}
