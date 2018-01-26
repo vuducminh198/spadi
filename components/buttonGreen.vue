@@ -75,7 +75,9 @@
             </tr>
             </tbody>
         </table>
-        <span :style="loading?'visibility: hidden':''">{{title}}</span>
+        <span :style="loading?'visibility: hidden':''+'font-family:Source Sans Pro'">
+            <span :class="iconClass" v-if="icon" style="font-size:24px;"></span>&nbsp;&nbsp;
+            {{title}}</span>
     </button>
 </template>
 <script>
@@ -94,6 +96,14 @@
                 type: String,
                 default: 'button'
             },
+            icon:{
+                type:Boolean,
+                default: false
+            },
+            iconClass:{
+                type:String,
+                default: 'el-icon-goods'
+            }
         },
         data() {
             return {}

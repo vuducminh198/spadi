@@ -1,8 +1,7 @@
 <template>
     <div class="box" style="padding:10px">
         <div class="">
-            <el-button icon="el-icon-plus" @click="$router.push('/tai-khoan/shop/tao-moi')">Thêm cửa hàng</el-button>
-
+            <el-button icon="el-icon-plus" @click="$router.push('/tai-khoan/shop/tao-moi')">Thêm chi nhánh</el-button>
         </div>
         <br/>
         <div class="table-responsive">
@@ -65,6 +64,7 @@
     import ShopCreate from './tao-moi'
 
     export default {
+        middleware: 'clientIsManager',
         components: {
             ShopCreate
         },

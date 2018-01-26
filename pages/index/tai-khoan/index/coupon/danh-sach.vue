@@ -47,6 +47,7 @@
     import couponCreate  from './tao-moi'
 
     export default {
+        middleware: 'clientIsManager',
         components: {
             couponCreate
         },

@@ -219,7 +219,7 @@
                                         </svg>
                                     </div>
                                     <div class="pull-left" style="padding-left:10px;">
-                                        <p style="font-size:32px;">Lưu thành công thông tin cửa hàng</p>
+                                        <p style="font-size:24px;">Lưu thành công thông tin cửa hàng chi nhánh</p>
                                         <p>Bạn có thể quản lý shop của mình trong phần <a href="javacript:;"
                                                                                           style="color:#FF5151; text-decoration: underline;"
                                                                                           @click="$router.push('/tai-khoan/shop/danh-sach')"> <span
@@ -272,6 +272,7 @@
     import PriBtn from "~/components/button";
 
     export default {
+        middleware:'clientIsManager',
         head() {
             return {
                 title: 'Thêm mới cửa hàng - Quản lý - Spadi.vn'
@@ -296,7 +297,8 @@
                     gzoom: 10,
                     dialogListName: false,
                     isLoading: false,
-                    active: 0
+                    active: 0,
+                    currentHref:''
                 },
                 form: {
                     addShop: {
@@ -340,7 +342,7 @@
                         }
                     })
                     .catch(error => {
-                        console.log(error);
+              
                     })
             },
             m_removePhoneIndex(indexW) {
@@ -405,8 +407,8 @@
                 let postForm = this.form.addShop;
                 delete postForm._inputPhone;
                 delete postForm._inputHotline;
-                postForm.lattitude = this.v.markers[0].position.lat;
-                postForm.longtitude = this.v.markers[0].position.lng;
+                postForm.latitude = this.v.markers[0].position.lat;
+                postForm.longitude = this.v.markers[0].position.lng;
                 postForm.chain = this.$store.state.adminSelectedChain._id;
                 this.$http.post(process.env.API.Shop_Create, postForm, this.cf())
                     .then(data => {
@@ -428,11 +430,11 @@
                     })
             },
             m_gmapUpdatePostion(e) {
-                console.log(e);
+           
             },
             m_gmapDragEnd(e) {
                 this.v.markers[0].position = {lat: e.latLng.lat(), lng: e.latLng.lng()};
-                console.log(this.v.markers[0].position);
+          
             }
         }
     }

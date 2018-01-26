@@ -24,7 +24,7 @@
                     <div style="height:60px; margin-top:20px; margin-bottom:20px;">
                         <el-steps :active="v.addChainStep" finish-status="success"
                                   align-center>
-                            <el-step title="Đăt tên chuỗi"></el-step>
+                            <el-step title="Đăt tên "></el-step>
                             <el-step title="Logo & ảnh nền"></el-step>
                             <el-step title="Đường dây nóng"></el-step>
                             <el-step title="Hoàn tất"></el-step>
@@ -33,7 +33,7 @@
                 </el-row>
                 <el-row class="mx-row">
                     <div :class="v.addChainStep!==0?'hidden':''">
-                        <label>Tên chuỗi (tên hiển thị)</label><br/>
+                        <label>Tên shop (tên hiển thị)</label><br/>
                         <el-input v-model="form.addChain.name"></el-input>
                         <div style="margin-top:20px">
                             <el-button class="pull-right" @click="v.addChainStep++">Tiếp theo <span
@@ -148,7 +148,7 @@
                                     class="el-icon-arrow-left"></span>Quay lại
                             </el-button>
                             <grebtn style="max-width:200px;" class="pull-right" type="submit" :loading="v.isLoading"
-                                    title="Thêm chuỗi"></grebtn>
+                                    title="Thêm cửa hàng"></grebtn>
 
                         </div>
                     </div>
@@ -203,6 +203,7 @@
     import jwt from 'json-web-token'
 
     export default {
+        middleware: 'clientIsManager',
         data: function () {
             return {
                 v: {
@@ -426,7 +427,7 @@
                         }
                     })
                     .catch(error => {
-                        console.log(error)
+                      
                     });
             },
             m_setSelectedChain(item) {

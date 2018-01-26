@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2480px" height="3508px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2480 3507"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="587" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Wingdings">
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="m" horiz-adv-x="952"><path d="M553.667 697.168l104.508 -43.0048c63.3214,-26.5025 114.152,-68.1634 152.493,-125.338 38.1628,-57.1553 57.3331,-120.16 57.3331,-188.818 0,-94.1718 -33.1627,-174.332 -99.666,-240.677 -66.3452,-66.1673 -146.505,-99.33 -240.499,-99.33 -44.3289,0 -87.5116,8.67606 -129.508,25.8306l-104.488 43.4989c-63.3412,26.1665 -114.172,67.6693 -152.513,124.844 -38.1628,57.1553 -57.3331,120.16 -57.3331,188.818 0,93.8358 33.1825,173.837 99.33,240.341 66.1673,66.5033 146.169,99.666 240.005,99.666 41.6807,0 85.0017,-8.6563 130.339,-25.8306zm-424.672 -317.832c0,-79.3296 29.0124,-147.671 86.9978,-204.668 57.847,-57.175 127.176,-85.6736 207.514,-85.6736 80.9897,0 150.497,28.8346 207.988,86.3456 57.6691,57.6691 86.5037,127.157 86.5037,208.502 0,80.9897 -28.8346,150.161 -86.5037,207.83 -57.4913,57.4913 -126.999,86.3258 -207.988,86.3258 -82.3336,0 -151.999,-28.9927 -209.016,-86.8397 -56.9972,-57.9853 -85.4958,-128.501 -85.4958,-211.822z"/></glyph>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Wingdings";src:url("#FontID0") format(svg)}
+    .str0 {stroke:#ED3237;stroke-width:2.0832}
+    .fil1 {fill:#FEFEFE}
+    .fil0 {fill:#ED3237}
+    .fnt0 {font-weight:normal;font-size:59.755px;font-family:'Wingdings'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0" d="M951 1227c25,0 45,20 45,45 0,21 -13,38 -32,44l-13 13 -14 -13c-18,-6 -32,-23 -32,-44 0,-25 21,-45 46,-45z"/>
+  <text x="924" y="1295"  class="fil1 fnt0">m</text>
+ </g>
+</svg>

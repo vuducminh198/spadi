@@ -36,6 +36,11 @@
 
     export default {
         middleware: 'checkLoginClient',
+        head(){
+            return {
+                title:'Đăng nhập | Spadi.vn - Trang đăng nhập tại Spadi.vn'
+            }
+        },
         name: 'dang-nhap',
         asyncData() {
             return {}
@@ -68,6 +73,9 @@
                                 email: crData.email,
                                 role: crData.role
                             }
+                            if (typeof  crData === 'undefined') {
+
+                            }
                             this.setCookie('ClientRole', crData.role);
                             this.setCookie('ClientToken', crData.token);
                             jwt.encode(process.env.jwt_KEY, clientInfo, async (jwtError, jwtData) => {
@@ -76,16 +84,19 @@
                                     await this.$store.commit('updateClientToken', crData.token);
                                     await this.$store.commit('updateClientInfo', clientInfo);
                                     await this.$store.commit('updateClientRole', crData.role);
-                                    setTimeout(() => {
-                                        this.$router.push('/tai-khoan/');
-                                    }, 100)
+
                                 }
                             })
+                            this.$router.push(this.$route.query.redirect || '/tai-khoan/');
                         }
                     })
                     .catch(error => {
                         this.v.isLoading = false;
-                        console.log(error);
+          
+                        this.$message({
+                            type: 'error',
+                            message: (typeof error.body !== 'undefined' && typeof error.body.ErrorMessage !== 'undefined' ? error.body.ErrorMessage : 'Đã xảy ra sự cố, vui lòng kiểm tra và thử lại sau')
+                        })
                     })
 
             }

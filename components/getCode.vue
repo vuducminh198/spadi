@@ -112,7 +112,7 @@
             </tbody>
         </table>
         <span :style="loading?'visibility: hidden':''">
-            <span class="el-icon-news" style="font-size:24px; margin-right:10px;"></span>
+            <span v-if="" class="iconClass" style="font-size:24px; margin-right:10px;"></span>
             {{title}}</span>
         <div class="rightIp"></div>
     </button>
@@ -133,6 +133,14 @@
                 type: String,
                 default: 'button'
             },
+            icon: {
+                type: Boolean,
+                default: false
+            },
+            iconClass: {
+                type: String,
+                default: 'el-icon-news'
+            }
         },
         data() {
             return {}

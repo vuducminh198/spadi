@@ -131,7 +131,7 @@ h4 + a:hover {
   text-decoration: underline; }
 
 a {
-  font-size: 14px;
+
   transition: all 0.3s ease-in-out; }
 
 a:hover, a:focus, a:active {
@@ -174,7 +174,7 @@ i[class^='pline'] {
   height: 38px;
   background-color: #f3f3f3;
   background-clip: padding-box;
-  border: 1px solid #f1f1f1;
+  border: 0px solid #f1f1f1;
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;

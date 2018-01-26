@@ -56,7 +56,7 @@
                         }
                     })
                     .catch(error => {
-                        console.log(error);
+                 
                     })
             })
         },
@@ -65,7 +65,7 @@
         },
         methods: {
             m_TestClick() {
-                console.log(process.env.cf());
+               
             }
         }
 

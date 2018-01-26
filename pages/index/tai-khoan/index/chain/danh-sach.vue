@@ -1,10 +1,13 @@
 <template>
     <div class="box" style="padding:10px">
+        <div>
+            <el-button icon="el-icon-plus" @click="$router.push('/tai-khoan/chain/tao-moi')">THÊM CỬA HÀNG</el-button>
+        </div>
         <div class="table-responsive">
             <table class="table">
                 <thead>
                 <tr>
-                    <th>TÊN CHUỖI</th>
+                    <th>TÊN CỬA HÀNG</th>
                     <th>SỐ CỬA HÀNG</th>
                     <th>LOGO</th>
                     <th>THAO TÁC</th>
@@ -34,6 +37,7 @@
 </template>
 <script>
     export default {
+        middleware: 'clientIsManager',
         name: 'listChain',
         data() {
             return {

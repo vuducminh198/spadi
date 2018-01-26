@@ -30,181 +30,261 @@
     .buttonAddAr:hover {
         opacity: .8;
     }
-    .affix{
 
 
-
-    }
 </style>
 <template>
     <div class="container-fluid " style="margin-top:20px;">
         <div class="container">
-            <div class="col-sm-4  col-md-3 sidebar">
-                <ul class="sidebar-menu" style="background-color:white" >
-                    <li class="dropdown messages-menu  xmenuClient " style="width:100%;">
-                        <a v-if="typeof $store.state.adminSelectedChain._id==='undefined'" href="javascript:;"
-                           class="dropdown-toggle" data-toggle="dropdown">
-                            <i style="padding-top:10px; padding-bottom:10px; font-style: normal">
-                                <span class="material-icons" style="font-size:18px; padding:5px;">share</span>
-                                CHUỖI CỬA
-                                HÀNG</i>&nbsp;
-                            <span class="fa fa-angle-down full-right"></span>
-                        </a>
-                        <a v-else href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"
-                           style="padding-top:5px; padding-bottom:5px;">
+            <div class="col-sm-4  col-md-3 sidebar " style="padding:0;">
+                <ul class="sidebar-menu" style="background-color:white">
+                    <!-- Type Client Manager-->
 
-                            <img v-if="$store.state.adminSelectedChain.logo.toString().length>1"
-                                 :src="img_base+$store.state.adminSelectedChain.logo"
-                                 style="width:40px; height:40px; border-radius: 4px;">
-                            <img v-else src="~/assets/img/default-none.svg"
-                                 style="width:40px; height:40px; border-radius: 4px;">
-                            <span style="margin-left:5px; padding-right:5px; font-size: 16px;">{{$store.state.adminSelectedChain.name}}</span>
-                            <span class="fa fa-angle-down"></span>
-                        </a>
-                        <ul class="dropdown-menu mxChild" style="background-color:white">
-                            <li class="header">Chọn 1 chuỗi để quản lý
-                                <button class="pull-right buttonAddAr" @click="$router.push('/tai-khoan/chain/tao-moi')">
-                                    <span class="el-icon-plus"></span>
-                                    TẠO MỚI
-                                </button>
-                            </li>
-                            <li v-if="true">
-                                <!-- inner menu: contains the messages -->
-                                <ul class="menu">
-                                    <li v-for="item in v.listChain" class="item-chain"
-                                        @click="m_setSelectedChain(item)">
-                                        <img v-if="item.logo.toString().length>1" :src="img_base+item.logo"
-                                             style="width:40px; height:40px;">
-                                        <img v-else src="~/assets/img/default-none.svg"
-                                             style="width:40px; height:40px;">
-                                        <span>{{item.name}}</span>
-                                    </li>
-                                    <!-- end message -->
-                                </ul>
-                                <!-- /.menu -->
-                            </li>
-                            <li class="footer">
-                                <a href="javascript:;" @click="$router.push('/tai-khoan/chain/danh-sach')">ĐI ĐẾN QUẢN LÝ
-                                    CHUỖI</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="material-icons" style="vertical-align: middle">store_mall_directory</i>
-                            <span class="mtext">CỬA HÀNG</span>
-                            <span class="pull-right-container">
+                    <template
+                            v-if="$store.state.ClientInfo.role==='manager' && $store.state.ClientToken.toString().length>10">
+                        <li class="dropdown messages-menu  xmenuClient " style="width:100%;">
+                            <a v-if="typeof $store.state.adminSelectedChain._id==='undefined'" href="javascript:;"
+                               class="dropdown-toggle" data-toggle="dropdown">
+                                <i style="padding-top:10px; padding-bottom:10px; font-style: normal">
+                                    <span class="material-icons" style="font-size:18px; padding:5px;">share</span>
+                                    CỬA HÀNG</i>&nbsp;
+                                <span class="fa fa-angle-down full-right"></span>
+                            </a>
+                            <a v-else href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"
+                               style="padding-top:5px; padding-bottom:5px;">
+                                <img v-if="typeof $store.state.adminSelectedChain.logo!=='undefined'"
+                                :src="img_base+$store.state.adminSelectedChain.logo"
+                                style="width:40px; height:40px; border-radius: 4px;">
+                                <img v-else src="~/assets/img/default-none.svg"
+                                style="width:40px; height:40px; border-radius: 4px;">
+                                <span style="margin-left:5px; padding-right:5px; font-size: 16px;">{{$store.state.adminSelectedChain.name}}</span>
+                                <span class="fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu mxChild" style="background-color:white">
+                                <li class="header">Chọn 1 chuỗi để quản lý
+                                    <button class="pull-right buttonAddAr"
+                                            @click="$router.push('/tai-khoan/chain/tao-moi')">
+                                        <span class="el-icon-plus"></span>
+                                        TẠO MỚI
+                                    </button>
+                                </li>
+                                <li v-if="true">
+
+                                    <ul class="menu">
+                                        <li v-if="typeof v.listChain!=='undefined'" v-for="item in v.listChain"
+                                            class="item-chain"
+                                            @click="m_setSelectedChain(item)">
+                                            <img v-if="typeof item.logo!=='undefined'" :src="img_base+item.logo"
+                                                 style="width:40px; height:40px; margin-right:5px;">
+                                            <img v-else src="~/assets/img/default-none.svg"
+                                                 style="width:40px; height:40px; margin-right:5px;">
+                                            <span>{{item.name}}</span>
+                                        </li>
+                                        <!-- end message -->
+                                    </ul>
+
+                                </li>
+                                <li class="footer">
+                                    <a href="javascript:;" @click="$router.push('/tai-khoan/chain/danh-sach')">ĐI ĐẾN
+                                        QUẢN LÝ CỬA HÀNG</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <template
+                                v-if="typeof $store.state.adminSelectedChain._id!=='undefined' && $store.state.adminSelectedChain._id.length>10">
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="material-icons" style="vertical-align: middle">store_mall_directory</i>
+                                    <span class="mtext">CHI NHÁNH</span>
+                                    <span class="pull-right-container">
                      <i class="fa fa-angle-left fa-fw pull-right"></i>
         </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">
-                                <a>
-                                    <i class="fa"></i>
-                                    <span class="page">Thêm mới</span>
                                 </a>
-                            </nuxt-link>
-                            <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/danh-sach">
-                                <a>
-                                    <i class="fa"></i>
-                                    <span class="page">Danh sách cửa hàng</span>
-                                </a>
-                            </nuxt-link>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="material-icons">redeem</i>
-                            <span>DEAL</span>
-                            <span class="pull-right-container">
+                                <ul class="treeview-menu">
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">
+                                        <a>
+                                            <i class="fa"></i>
+                                            <span class="page">Thêm mới</span>
+                                        </a>
+                                    </nuxt-link>
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/danh-sach">
+                                        <a>
+                                            <i class="fa"></i>
+                                            <span class="page">Danh sách chi nhánh</span>
+                                        </a>
+                                    </nuxt-link>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="material-icons">redeem</i>
+                                    <span>DEAL</span>
+                                    <span class="pull-right-container">
           <i class="fa fa-angle-left fa-fw pull-right"></i>
         </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <nuxt-link tag="li" class="pageLink" to="/tai-khoan/deal/tao-moi">
-                                <a>
-                                    <i class="fa "></i>
-                                    <span class="page">Thêm mới</span>
                                 </a>
-                            </nuxt-link>
-                            <nuxt-link tag="li" class="pageLink" to="/tai-khoan/deal/danh-sach">
-                                <a>
-                                    <i class="fa"></i>
-                                    <span class="page">Danh sách Deal</span>
-                                </a>
-                            </nuxt-link>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="material-icons">toll</i>
-                            <span>COUPON</span>
-                            <span class="pull-right-container">
+                                <ul class="treeview-menu">
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/deal/tao-moi">
+                                        <a>
+                                            <i class="fa "></i>
+                                            <span class="page">Thêm mới</span>
+                                        </a>
+                                    </nuxt-link>
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/deal/danh-sach">
+                                        <a>
+                                            <i class="fa"></i>
+                                            <span class="page">Danh sách Deal</span>
+                                        </a>
+                                    </nuxt-link>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="material-icons">toll</i>
+                                    <span>COUPON</span>
+                                    <span class="pull-right-container">
           <i class="fa fa-angle-left fa-fw pull-right"></i>
         </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <nuxt-link tag="li" class="pageLink" to="/tai-khoan/coupon/tao-moi">
-                                <a>
-                                    <i class="fa"></i>
-                                    <span class="page">Thêm mới</span>
                                 </a>
-                            </nuxt-link>
-                            <nuxt-link tag="li" class="pageLink" to="/tai-khoan/coupon/danh-sach">
-                                <a>
-                                    <i class="fa"></i>
-                                    <span class="page">Danh sách Coupon</span>
-                                </a>
-                            </nuxt-link>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="material-icons">face</i>
-                            <span>KHÁCH HÀNG</span>
-                            <span class="pull-right-container">
+                                <ul class="treeview-menu">
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/coupon/tao-moi">
+                                        <a>
+                                            <i class="fa"></i>
+                                            <span class="page">Thêm mới</span>
+                                        </a>
+                                    </nuxt-link>
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/coupon/danh-sach">
+                                        <a>
+                                            <i class="fa"></i>
+                                            <span class="page">Danh sách Coupon</span>
+                                        </a>
+                                    </nuxt-link>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="material-icons">web</i>
+                                    <span>BÀI VIẾT</span>
+                                    <span class="pull-right-container">
           <i class="fa fa-angle-left fa-fw pull-right"></i>
         </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">
-                                <a>
-                                    <i class="fa fa-cog"></i>
-                                    <span class="page">Thêm mới</span>
                                 </a>
-                            </nuxt-link>
-                            <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">
-                                <a>
-                                    <i class="fa fa-cog"></i>
-                                    <span class="page">Danh sách Coupon</span>
-                                </a>
-                            </nuxt-link>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="material-icons">bubble_chart</i>
-                            <span>THỐNG KÊ</span>
-                            <span class="pull-right-container">
+                                <ul class="treeview-menu">
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/post/tao-moi">
+                                        <a>
+                                            <i class="fa"></i>
+                                            <span class="page">Thêm mới</span>
+                                        </a>
+                                    </nuxt-link>
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/post/danh-sach">
+                                        <a>
+                                            <i class="fa"></i>
+                                            <span class="page">Danh sách bài viết</span>
+                                        </a>
+                                    </nuxt-link>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="material-icons">face</i>
+                                    <span>KHÁCH HÀNG</span>
+                                    <span class="pull-right-container">
           <i class="fa fa-angle-left fa-fw pull-right"></i>
         </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">
-                                <a>
-                                    <i class="fa fa-cog"></i>
-                                    <span class="page">Thêm mới</span>
                                 </a>
-                            </nuxt-link>
-                            <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">
-                                <a>
-                                    <i class="fa fa-cog"></i>
-                                    <span class="page">Danh sách Coupon</span>
+                                <ul class="treeview-menu">
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">
+                                        <a>
+                                            <i class="fa fa-cog"></i>
+                                            <span class="page">Thêm mới</span>
+                                        </a>
+                                    </nuxt-link>
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">
+                                        <a>
+                                            <i class="fa fa-cog"></i>
+                                            <span class="page">Danh sách Coupon</span>
+                                        </a>
+                                    </nuxt-link>
+                                </ul>
+                            </li>
+                            <li class="treeview">
+                                <a href="#">
+                                    <i class="material-icons">bubble_chart</i>
+                                    <span>THỐNG KÊ</span>
+                                    <span class="pull-right-container">
+          <i class="fa fa-angle-left fa-fw pull-right"></i>
+        </span>
                                 </a>
-                            </nuxt-link>
-                        </ul>
-                    </li>
+                                <ul class="treeview-menu">
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">
+                                        <a>
+                                            <i class="fa fa-cog"></i>
+                                            <span class="page">Thêm mới</span>
+                                        </a>
+                                    </nuxt-link>
+                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">
+                                        <a>
+                                            <i class="fa fa-cog"></i>
+                                            <span class="page">Danh sách Coupon</span>
+                                        </a>
+                                    </nuxt-link>
+                                </ul>
+                            </li>
+                        </template>
+                    </template>
+                    <!--Type Client User Customer -->
+                    <template>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="material-icons">bubble_chart</i>
+                                <span>LỊCH SỬ MUA</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left fa-fw pull-right"></i>
+                                  </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">
+                                    <a>
+                                        <i class="fa "></i>
+                                        <span class="page">Thêm mới</span>
+                                    </a>
+                                </nuxt-link>
+                                <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">
+                                    <a>
+                                        <i class="fa "></i>
+                                        <span class="page">Danh sách Coupon</span>
+                                    </a>
+                                </nuxt-link>
+                            </ul>
+                        </li>
 
+                    </template>
+                    <!--Type Client Public -->
+                    <template>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="material-icons">info_outline</i>
+                                <span>TÀI KHOẢN</span>
+                                <span class="pull-right-container">
+                                <i class="fa fa-angle-left fa-fw pull-right"></i>
+                                 </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <nuxt-link tag="li" class="pageLink" to="/tai-khoan/ca-nhan/thong-tin">
+                                    <a>
+                                        <i class="fa"></i>
+                                        <span class="page">Thông tin</span>
+                                    </a>
+                                </nuxt-link>
+                                <nuxt-link tag="li" class="pageLink" to="/tai-khoan/ca-nhan/doi-mat-khau">
+                                    <a>
+                                        <i class="fa"></i>
+                                        <span class="page">Đổi mật khẩu</span>
+                                    </a>
+                                </nuxt-link>
+                            </ul>
+                        </li>
+                    </template>
                 </ul>
             </div>
 
@@ -227,17 +307,16 @@
         middleware: 'isLoginClient',
         async asyncData({store, redirect, res, app}) {
             let resss = 0;
-            await app.$axios.$get(process.env.API.UserGetProfile, {
-                headers: {}
-            })
-                .then((resp) => {
-                    resss = {abc: 123};
-                })
-                .catch(error => {
-
-                    resss = error;
-                    //redirect('/tai-khoan/dang-nhap');
-                })
+            // await app.$axios.$get(process.env.API.UserGetProfile, {
+            //     headers: {Authorization: 'Bearer' + store.state.ClientToken}
+            // })
+            //     .then((resp) => {
+            //
+            //     })
+            //     .catch(error => {
+            //
+            //         redirect('/tai-khoan/dang-nhap');
+            //     })
             return {
                 re: store.state.token
             }
@@ -263,11 +342,14 @@
             }
         },
         beforeMount() {
+
             this.m_getListCity();
-            this.m_getListChain();
-            this.EB.$on('reloadListChain', () => {
+            if (this.isClientManager()) {
                 this.m_getListChain();
-            })
+                this.EB.$on('reloadListChain', () => {
+                    this.m_getListChain();
+                })
+            }
         },
         methods: {
             changeloading() {
@@ -426,7 +508,7 @@
                         }
                     })
                     .catch(error => {
-                        console.log(error)
+                    
                     });
             },
             m_setSelectedChain(item) {

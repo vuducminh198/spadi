@@ -41,15 +41,15 @@
         <hint v-if="typeof  $store.state.adminSelectedChain._id==='undefined'"></hint>
         <form @submit="m_formAddDealSubmit($event)" v-else>
             <div>
-                <label>Tiêu đề</label>
+                <label class="bold">Tiêu đề</label>
                 <div style="max-width:600px;">
                     <el-input v-model="form.addDeal.title"></el-input>
                 </div>
-                <label class="mt-8">Mô tả</label>
+                <label class="mt-8 bold">Mô tả</label>
                 <div style="max-width:600px;">
                     <el-input type="textarea" v-model="form.addDeal.description"></el-input>
                 </div>
-                <label class="mt-8">Thời gian sử dụng</label>
+                <label class="mt-8 bold">Thời gian sử dụng</label>
                 <div class="block" style="max-width: 600px">
                     <el-date-picker style="width:100%;"
                                     v-model="value3"
@@ -61,7 +61,7 @@
                 </div>
                 <el-row :gutter="20" style="max-width:600px;margin-top:10px; margin-bottom:10px;">
                     <el-col :md="12" :sm="12" :xs="24" :lg="12">
-                        <label class="mt-8">Danh mục sản phẩm</label>
+                        <label class="mt-8 bold">Danh mục sản phẩm</label>
                         <el-select style="width:100%;" multiple filterable v-model="form.addDeal.serviceItem"
                                    no-data-text="Không có dữ liệu" no-match-text="Không có dữ liệu phù hợp"
                                    placeholder="Chọn danh mục sản phẩm">
@@ -80,7 +80,7 @@
                         </el-select>
                     </el-col>
                     <el-col :md="12" :sm="12" :xs="24" :lg="12">
-                        <label class="mt-8">Mặt hàng có tại</label>
+                        <label class="mt-8 bold">Mặt hàng có tại</label>
                         <el-select style="width:100%;" multiple filterable v-model="form.addDeal.shop"
                                    no-data-text="Không có dữ liệu" no-match-text="Không có dữ liệu phù hợp"
                                    placeholder="Chọn danh cửa hàng">
@@ -102,12 +102,12 @@
                 </el-row>
                 <el-row :gutter="20" style="max-width:600px;margin-top:10px; margin-bottom:10px;">
                     <el-col :md="12" :sm="12" :xs="24" :lg="12">
-                        <label class="mt-8">Số lượng</label>
+                        <label class="mt-8 bold">Số lượng</label>
                         <el-input-number controls-position="right" style="width:100%;"
                                          v-model="form.addDeal.quantity"></el-input-number>
                     </el-col>
                     <el-col :md="12" :sm="12" :xs="24" :lg="12">
-                        <label class="mt-8">Kiểu Coupon</label>
+                        <label class="mt-8 bold">Kiểu Coupon</label>
                         <el-select style="width:100%;" filterable v-model="form.addDeal.typeCoupon"
                                    no-data-text="Không có dữ liệu" no-match-text="Không có dữ liệu phù hợp"
                                    placeholder="Chọn danh cửa hàng">
@@ -118,7 +118,7 @@
 
                     </el-col>
                 </el-row>
-                <label class="mt-8">Hình ảnh (Tối đa 6 hình ảnh)</label><br/>
+                <label class="mt-8 bold">Hình ảnh (Tối đa 6 hình ảnh)</label><br/>
                 <div>
                     <template v-for="item,index in v.imageReview">
                         <div :style="'background-size:cover; float:left; margin-right:5px; width:100px; height:100px; border:1px solid rgba(45,45,8,.2); background-image:url('+item+')'">
@@ -136,7 +136,7 @@
                     <input type="file" multiple @change="m_InputFileChange($event)" id="inputFileUploadLisDeal"
                            style="display: none" accept="image/jpeg">
                 </div>
-                <label class="mt-8">Nội dung chi tiết</label>
+                <label class="mt-8 bold">Nội dung chi tiết</label>
                 <section class="container-q">
                     <div class="quill-editor" id="mcontent"
                          :content="content"
@@ -144,7 +144,7 @@
                     </div>
                 </section>
                 <div style="margin-top:20px;">
-                    <grebtn style="max-width:200px;" title="Tạo Coupon" :loading="v.isLoading" :type="'submit'"></grebtn>
+                    <grebtn title="Tạo Coupon" :loading="v.isLoading" :type="'submit'"></grebtn>
                 </div>
             </div>
 
@@ -155,17 +155,16 @@
 <script>
     import $ from 'jquery'
     import Vue from 'vue';
-    import PriBtn from "~/components/button";
+
     import {Input, InputNumber} from 'element-ui'
     import moment from 'moment'
 
 
     export default {
-
+        middleware: 'clientIsManager',
         components: {
 
 
-            Input, InputNumber, PriBtn
         },
         head: {
             title: 'Tạo mới Coupon - Spadi.vn'
@@ -310,7 +309,7 @@
                     if (i !== index) res.push(e);
                 })
                 this.form.addDeal.images = res;
-                console.log(this.form.addDeal.images);
+        
             },
             m_formAddDealSubmit(e) {
                 e.preventDefault();
@@ -338,10 +337,10 @@
                     cancelButtonText: 'Không'
                 })
                     .then(() => {
-                        this.isLoading = true;
+                        this.v.isLoading = true;
                         this.$http.post(process.env.API.Coupon_Create, postForm, this.cf())
                             .then(data => {
-                                this.form.isLoading = false;
+                                this.v.isLoading = false;
                                 this.$message({
                                     type: "success",
                                     message: typeof data.body.Message === 'undefined' ? 'Thao tác thành công' : data.body.Message

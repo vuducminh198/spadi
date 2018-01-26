@@ -47,6 +47,7 @@
     import ShopCreate from './tao-moi'
 
     export default {
+        middleware: 'clientIsManager',
         components: {
             ShopCreate
         },
