@@ -17,8 +17,9 @@
     }
 </style>
 <template>
-    <div class="box" style="padding:10px;">
-        <form @submit="m_submitAddNewChain($event)" style="position: relative">
+    <div style="background-color:white; padding: 10px;">
+        <div style="font-size:18px; font-family: 'Open Sans' ; margin-bottom:10px;">TẠO MỚI CỬA HÀNG</div>
+        <form @submit="m_submitAddNewChain($event)" style="position: relative;  background-color:white;">
             <div>
                 <el-row :class="v.addChainStep===4?'hidden':''">
                     <div style="height:60px; margin-top:20px; margin-bottom:20px;">
@@ -260,10 +261,8 @@
         },
         beforeMount() {
             this.m_getListCity();
-            this.m_getListChain();
-            this.EB.$on('reloadListChain', () => {
-                this.m_getListChain();
-            })
+
+
         },
         mounted() {
             setTimeout(() => {
@@ -391,7 +390,7 @@
                             type: "success",
                             message: typeof data.body.Message === 'undefined' ? 'Thao tác thành công' : data.body.Message
                         });
-                        this.EB.$emit('reloadListChain');
+
                     })
                     .catch(error => {
                         this.v.isLoading = false;
@@ -401,35 +400,7 @@
                         })
                     })
             },
-            m_getListChain() {
-                this.$http.get(process.env.API.Chain_List, this.cf())
-                    .then(data => {
-                        this.v.listChain = data.body;
-                        if (this.v.listChain.length >= 1) {
-                            jwt.decode(process.env.jwt_KEY, this.getCookie('selectedChain'), (error, encoded) => {
-                                if (error) this.m_setSelectedChain(this.v.listChain[0]);
-                                else {
-                                    let flag = false;
-                                    this.v.listChain.forEach(e => {
-                                        if (e._id === encoded._id) {
-                                            flag = true;
-                                            this.m_setSelectedChain(e);
-                                        }
-                                    });
-                                    if (!flag) this.m_setSelectedChain(this.v.listChain[0]);
-                                }
-                            })
 
-                        }
-                        else {
-                            this.setCookie('selectedChain', "");
-                            this.$store.commit('updateAdminSelectedChain', {})
-                        }
-                    })
-                    .catch(error => {
-                      
-                    });
-            },
             m_setSelectedChain(item) {
                 let jsonjwt = '';
                 jwt.encode(process.env.jwt_KEY, item, async (error, data) => {

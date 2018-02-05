@@ -53,10 +53,10 @@
                             <a v-else href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"
                                style="padding-top:5px; padding-bottom:5px;">
                                 <img v-if="typeof $store.state.adminSelectedChain.logo!=='undefined'"
-                                :src="img_base+$store.state.adminSelectedChain.logo"
-                                style="width:40px; height:40px; border-radius: 4px;">
+                                     :src="img_base+$store.state.adminSelectedChain.logo"
+                                     style="width:40px; height:40px; border-radius: 4px;">
                                 <img v-else src="~/assets/img/default-none.svg"
-                                style="width:40px; height:40px; border-radius: 4px;">
+                                     style="width:40px; height:40px; border-radius: 4px;">
                                 <span style="margin-left:5px; padding-right:5px; font-size: 16px;">{{$store.state.adminSelectedChain.name}}</span>
                                 <span class="fa fa-angle-down"></span>
                             </a>
@@ -184,81 +184,81 @@
                                     </nuxt-link>
                                 </ul>
                             </li>
-                            <li class="treeview">
-                                <a href="#">
-                                    <i class="material-icons">face</i>
-                                    <span>KHÁCH HÀNG</span>
-                                    <span class="pull-right-container">
-          <i class="fa fa-angle-left fa-fw pull-right"></i>
-        </span>
-                                </a>
-                                <ul class="treeview-menu">
-                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">
-                                        <a>
-                                            <i class="fa fa-cog"></i>
-                                            <span class="page">Thêm mới</span>
-                                        </a>
-                                    </nuxt-link>
-                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">
-                                        <a>
-                                            <i class="fa fa-cog"></i>
-                                            <span class="page">Danh sách Coupon</span>
-                                        </a>
-                                    </nuxt-link>
-                                </ul>
-                            </li>
-                            <li class="treeview">
-                                <a href="#">
-                                    <i class="material-icons">bubble_chart</i>
-                                    <span>THỐNG KÊ</span>
-                                    <span class="pull-right-container">
-          <i class="fa fa-angle-left fa-fw pull-right"></i>
-        </span>
-                                </a>
-                                <ul class="treeview-menu">
-                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">
-                                        <a>
-                                            <i class="fa fa-cog"></i>
-                                            <span class="page">Thêm mới</span>
-                                        </a>
-                                    </nuxt-link>
-                                    <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">
-                                        <a>
-                                            <i class="fa fa-cog"></i>
-                                            <span class="page">Danh sách Coupon</span>
-                                        </a>
-                                    </nuxt-link>
-                                </ul>
-                            </li>
+                            <!--<li class="treeview">-->
+                                <!--<a href="#">-->
+                                    <!--<i class="material-icons">face</i>-->
+                                    <!--<span>KHÁCH HÀNG</span>-->
+                                    <!--<span class="pull-right-container">-->
+          <!--<i class="fa fa-angle-left fa-fw pull-right"></i>-->
+        <!--</span>-->
+                                <!--</a>-->
+                                <!--<ul class="treeview-menu">-->
+                                    <!--<nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">-->
+                                        <!--<a>-->
+                                            <!--<i class="fa fa-cog"></i>-->
+                                            <!--<span class="page">Thêm mới</span>-->
+                                        <!--</a>-->
+                                    <!--</nuxt-link>-->
+                                    <!--<nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">-->
+                                        <!--<a>-->
+                                            <!--<i class="fa fa-cog"></i>-->
+                                            <!--<span class="page">Danh sách Coupon</span>-->
+                                        <!--</a>-->
+                                    <!--</nuxt-link>-->
+                                <!--</ul>-->
+                            <!--</li>-->
+                            <!--<li class="treeview">-->
+                                <!--<a href="#">-->
+                                    <!--<i class="material-icons">bubble_chart</i>-->
+                                    <!--<span>THỐNG KÊ</span>-->
+                                    <!--<span class="pull-right-container">-->
+          <!--<i class="fa fa-angle-left fa-fw pull-right"></i>-->
+        <!--</span>-->
+                                <!--</a>-->
+                                <!--<ul class="treeview-menu">-->
+                                    <!--<nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">-->
+                                        <!--<a>-->
+                                            <!--<i class="fa fa-cog"></i>-->
+                                            <!--<span class="page">Thêm mới</span>-->
+                                        <!--</a>-->
+                                    <!--</nuxt-link>-->
+                                    <!--<nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">-->
+                                        <!--<a>-->
+                                            <!--<i class="fa fa-cog"></i>-->
+                                            <!--<span class="page">Danh sách Coupon</span>-->
+                                        <!--</a>-->
+                                    <!--</nuxt-link>-->
+                                <!--</ul>-->
+                            <!--</li>-->
                         </template>
                     </template>
                     <!--Type Client User Customer -->
-                    <template>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="material-icons">bubble_chart</i>
-                                <span>LỊCH SỬ MUA</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left fa-fw pull-right"></i>
-                                  </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">
-                                    <a>
-                                        <i class="fa "></i>
-                                        <span class="page">Thêm mới</span>
-                                    </a>
-                                </nuxt-link>
-                                <nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">
-                                    <a>
-                                        <i class="fa "></i>
-                                        <span class="page">Danh sách Coupon</span>
-                                    </a>
-                                </nuxt-link>
-                            </ul>
-                        </li>
+                    <!--<template>-->
+                        <!--<li class="treeview">-->
+                            <!--<a href="#">-->
+                                <!--<i class="material-icons">bubble_chart</i>-->
+                                <!--<span>LỊCH SỬ MUA</span>-->
+                                <!--<span class="pull-right-container">-->
+                                    <!--<i class="fa fa-angle-left fa-fw pull-right"></i>-->
+                                  <!--</span>-->
+                            <!--</a>-->
+                            <!--<ul class="treeview-menu">-->
+                                <!--<nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/tao-moi">-->
+                                    <!--<a>-->
+                                        <!--<i class="fa "></i>-->
+                                        <!--<span class="page">Thêm mới</span>-->
+                                    <!--</a>-->
+                                <!--</nuxt-link>-->
+                                <!--<nuxt-link tag="li" class="pageLink" to="/tai-khoan/shop/">-->
+                                    <!--<a>-->
+                                        <!--<i class="fa "></i>-->
+                                        <!--<span class="page">Danh sách Coupon</span>-->
+                                    <!--</a>-->
+                                <!--</nuxt-link>-->
+                            <!--</ul>-->
+                        <!--</li>-->
 
-                    </template>
+                    <!--</template>-->
                     <!--Type Client Public -->
                     <template>
                         <li class="treeview">
@@ -324,7 +324,8 @@
         head: {
             bodyAttrs: {
                 class: 'hold-transition skin-blue sidebar-mini'
-            }
+            },
+            title: "Quản lý tài khoản | Spadi.vn"
         },
         components: {
             'sidebar': SideBar
@@ -508,7 +509,7 @@
                         }
                     })
                     .catch(error => {
-                    
+
                     });
             },
             m_setSelectedChain(item) {

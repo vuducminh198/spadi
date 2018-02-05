@@ -1,7 +1,10 @@
 <template>
-    <div class="box" style="padding:10px">
-        <div class="text-right">
-            <el-button icon="el-icon-plus" @click="()=>{this.v.dialogAddCoupon = true; }">Tạo mới Coupon</el-button>
+    <div style="padding:10px; background-color:white;">
+        <div style="font-family: 'Open Sans'; font-size:18px; margin-bottom:10px;">
+            DANH SÁCH TIN TỨC
+        </div>
+        <div class="">
+            <el-button icon="el-icon-plus" @click="()=>{this.$router.push('/tai-khoan/post/tao-moi') }">Tạo mới tin tức</el-button>
         </div>
         <div class="table-responsive">
             <table class="table">
@@ -30,7 +33,7 @@
                     </td>
                     <td>
                         <el-button-group>
-                            <el-button icon="el-icon-edit"></el-button>
+                            <el-button icon="el-icon-edit" @click="$router.push('/tai-khoan/post/cap-nhat?_='+item._id)"></el-button>
                             <el-button icon="el-icon-close"></el-button>
                         </el-button-group>
                     </td>

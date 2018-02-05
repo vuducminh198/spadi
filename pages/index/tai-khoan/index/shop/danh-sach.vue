@@ -1,63 +1,68 @@
 <template>
-    <div class="box" style="padding:10px">
-        <div class="">
-            <el-button icon="el-icon-plus" @click="$router.push('/tai-khoan/shop/tao-moi')">Thêm chi nhánh</el-button>
+    <div style="padding:10px; background-color:white">
+        <div style="font-family: 'Open Sans'; font-size: 18px; margin-bottom:10px;">CHI NHÁNH {{$store.state.adminSelectedChain.name}}</div>
+        <div style="padding:10px; background-color:white;">
+            <div class="">
+                <el-button icon="el-icon-plus" @click="$router.push('/tai-khoan/shop/tao-moi')">Thêm chi nhánh
+                </el-button>
+            </div>
+            <br/>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Tên</th>
+                        <th>Địa chỉ</th>
+                        <th>Điện thoại</th>
+                        <th>Đường dây nóng</th>
+                        <th>Quận / Thành phố</th>
+                        <th style="width:130px;">Thao tác</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="item in v.listShop">
+                        <td>{{item.name}}</td>
+                        <td>{{item.address}}</td>
+                        <td>
+                            <el-collapse v-if="item.phone.length>=2">
+                                <el-collapse-item title="Chi tiết">
+                                    <template v-for="it in item.phone">
+                                        <span><span class="el-icon-phone"></span> {{it}}</span>
+                                    </template>
+                                </el-collapse-item>
+                            </el-collapse>
+                            <template v-else>
+                                <span><span class="el-icon-phone"></span> {{item.phone[0]}}</span>
+                            </template>
+                        </td>
+                        <td>
+                            <el-collapse v-if="item.phone.length>=2">
+                                <el-collapse-item title="Chi tiết">
+                                    <template v-for="it in item.hotLine">
+                                        <span><span class="el-icon-phone"></span> {{it}}</span>
+                                    </template>
+                                </el-collapse-item>
+                            </el-collapse>
+                            <template v-else>
+                                <span><span class="el-icon-phone"></span> {{item.hotLine[0]}}</span>
+                            </template>
+                        </td>
+                        <td>{{item.district +'/' + item.city}}</td>
+                        <td>
+                            <el-button-group>
+                                <el-button icon="el-icon-edit"
+                                           @click="$router.push(`/tai-khoan/shop/cap-nhat?_=${item._id}`)"></el-button>
+                                <el-button icon="el-icon-close"></el-button>
+                            </el-button-group>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <el-dialog :visible.sync="v.dialogAddShop" :width="'800px'" :top="'0px'">
+                <shop-create :nobox="true"></shop-create>
+            </el-dialog>
         </div>
-        <br/>
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th>Tên</th>
-                    <th>Địa chỉ</th>
-                    <th>Điện thoại</th>
-                    <th>Đường dây nóng</th>
-                    <th>Quận / Thành phố</th>
-                    <th style="width:130px;">Thao tác</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr v-for="item in v.listShop">
-                    <td>{{item.name}}</td>
-                    <td>{{item.address}}</td>
-                    <td>
-                        <el-collapse v-if="item.phone.length>=2">
-                            <el-collapse-item title="Chi tiết">
-                                <template v-for="it in item.phone">
-                                    <span><span class="el-icon-phone"></span> {{it}}</span>
-                                </template>
-                            </el-collapse-item>
-                        </el-collapse>
-                        <template v-else>
-                            <span><span class="el-icon-phone"></span> {{item.phone[0]}}</span>
-                        </template>
-                    </td>
-                    <td>
-                        <el-collapse v-if="item.phone.length>=2">
-                            <el-collapse-item title="Chi tiết">
-                                <template v-for="it in item.hotLine">
-                                    <span><span class="el-icon-phone"></span> {{it}}</span>
-                                </template>
-                            </el-collapse-item>
-                        </el-collapse>
-                        <template v-else>
-                            <span><span class="el-icon-phone"></span> {{item.hotLine[0]}}</span>
-                        </template>
-                    </td>
-                    <td>{{item.district +'/' + item.city}}</td>
-                    <td>
-                        <el-button-group>
-                            <el-button icon="el-icon-edit"></el-button>
-                            <el-button icon="el-icon-close"></el-button>
-                        </el-button-group>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <el-dialog :visible.sync="v.dialogAddShop" :width="'800px'" :top="'0px'">
-            <shop-create :nobox="true"></shop-create>
-        </el-dialog>
     </div>
 </template>
 <script>

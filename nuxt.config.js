@@ -25,6 +25,7 @@ module.exports = {
             Chain_Update: `${BASE_URL}/chain/update`,
             Chain_PublicGetList: `${BASE_URL}/chain/public`,
             Chain_publicGetDetailByData: `${BASE_URL}/chain/public/`,
+            Chain_GetAddress: `${BASE_URL}/chain/address`,
             City_List: `${BASE_URL}/city/list`,
             Shop_Create: `${BASE_URL}/shop/create`,
             Shop_ListByChain: `${BASE_URL}/shop/list?chain=`,
@@ -60,7 +61,11 @@ module.exports = {
             Post_GetListPublic: `${BASE_URL}/post/public`,
             Post_GetPublicByData: `${BASE_URL}/post/public/`,
             Post_Comment: `${BASE_URL}/post/comment`,
-            GMAP_GETDISTACE: `https://maps.googleapis.com/maps/api/distancematrix/json?key=&origins=`
+            GMAP_GETDISTACE: `https://maps.googleapis.com/maps/api/distancematrix/json?key=&origins=`,
+            Search_ByKeyword: `${BASE_URL}/search/s?q=`,
+            Search_Suggest: `${BASE_URL}/search/suggest?q=`,
+            Search_Location: `${BASE_URL}/search/address`,
+            Search_ByChain: `${BASE_URL}/search/chain`
         },
         BASE: BASE,
         BASE_URL: BASE_URL,
@@ -117,6 +122,7 @@ module.exports = {
                     rel: 'stylesheet',
                     href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'
                 },
+                {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans'},
                 {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'},
                 {rel: 'stylesheet', href: '/js/plugins/pace/pace.min.css'},
                 {rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'},
@@ -131,6 +137,7 @@ module.exports = {
                 {src: '/js/plugins/AdminLTE/app.min.js'},
                 {src: '/js/plugins/pace/pace.min.js'},
                 {src: 'https://cdn.quilljs.com/1.3.4/quill.js'},
+                {src: 'https://apis.google.com/js/platform.js'},
                 {type: 'javascript', src: '/js/custom.js'},
 
             ],
@@ -148,7 +155,7 @@ module.exports = {
 
     build: {
         publicPath: '/dist/',
-        vendor: ['vue-quill-editor', 'element-ui', 'vue-js-modal'],
+        vendor: ['vue-quill-editor', 'element-ui', 'vue-js-modal', 'axios'],
         babel: {
             'presets': ['vue-app'],
             'plugins': [

@@ -1,21 +1,22 @@
 <template>
     <div class="container" style="margin-top:20px;">
-        <div class="col-sm-4" >
+        <div class="col-sm-4">
             <div style="background-color:white; padding: 26px;">
-                <h6 class="headText">Danh mục</h6>
+                <el-input clearable placeholder="Nhập cửa hàng cần tìm!" v-model="v.keyword"></el-input>
+                <h6 class="headText" style="margin-top:20px;">Danh mục</h6>
                 <ul v-if="!mainData.isErrorGetCategory"
                     style="margin:0; padding:0; list-style-type: none; margin-top:30px;">
-                    <li v-for="item in mainData.listCategory" style="font-family: 'Open Sans'; font-size:15px;">
+                    <li v-for="item in mainData.listCategory"
+                        style="font-family: 'Open Sans'; font-size:14px; overflow: hidden; text-overflow: ellipsis;">
                         <el-checkbox></el-checkbox>
                         {{item.name}}
                     </li>
                 </ul>
-            </div>
-            <div style="background-color:white; padding: 26px; margin-top:30px;">
-                <h6 class="headText">Tỉnh thành</h6>
+
+                <h6 class="headText" style="margin-top:20px;">Tỉnh thành</h6>
                 <ul v-if="!mainData.isErrorGetCity"
                     style="margin:0; padding:0; list-style-type: none; margin-top:20px;">
-                    <li style="font-family: 'Open Sans'; font-size:15px;" v-for="item,index in mainData.listCity"
+                    <li style="font-family: 'Open Sans'; font-size:14px;" v-for="item,index in mainData.listCity"
                         v-show="index<5 || index>=5 && v.showMoreListCity">
                         <el-checkbox></el-checkbox>
                         {{item.name}}
@@ -28,26 +29,10 @@
                 </ul>
 
             </div>
-            <div style="background-color:white; padding: 26px; margin-top:30px;">
-                <h6 class="headText">Trạng thái</h6>
-                <ul style="margin:0; padding:0; list-style-type: none; margin-top:20px; font-family: 'Open Sans'; font-size:15px;">
-                    <li>
-                        <el-checkbox></el-checkbox>
-                        Có coupon
-                    </li>
-                    <li>
-                        <el-checkbox></el-checkbox>
-                        Có giảm giá
-                    </li>
-                    <li>
-                        <el-checkbox></el-checkbox>
-                        Sản phẩm mới
-                    </li>
-                </ul>
-            </div>
         </div>
         <div class="col-sm-8">
-            <div v-for="item in mainData.listChain" class="col-sm-6" style="margin-bottom:20px;">
+            <p v-if="v.keyword.trim().length>0">Hiển thị kết quả cho từ khóa: {{v.keyword}}</p>
+            <div v-for="item in c_listChain" class="col-sm-6" style="margin-bottom:20px; padding-left:0">
                 <div style="background-color:white;">
                     <div :style="`width:100%; height:180px;background-image:url(${img_base+item.cover[0]}); background-size:cover; position:relative` ">
                         <div class="shopSmall"
@@ -73,7 +58,8 @@
                                     <span class="el-icon-star-off buttonFlat"></span>
                                 </td>
                                 <td style="border:0; border-left:1px dashed rgba(45,45,48,.2); margin:0; padding:0; text-align:center">
-                                    <span class="el-icon-view buttonFlat" @click="$router.push(`/cua-hang/${item.slug}`)"></span>
+                                    <span class="el-icon-view buttonFlat"
+                                          @click="$router.push(`/cua-hang/${item.slug}`)"></span>
                                 </td>
                             </tr>
                             </tbody>
@@ -118,10 +104,30 @@
                 mainData
             }
         },
+        head() {
+            return {
+                title: 'Danh sách cửa hàng | Spadi.vn'
+            }
+        },
         data() {
             return {
                 v: {
-                    showMoreListCity: false
+                    showMoreListCity: false,
+                    keyword: '',
+                }
+            }
+        },
+        computed: {
+            c_listChain() {
+                let keyword = this.CreateSlug(this.v.keyword.trim());
+                if (keyword.length === 0) return this.mainData.listChain;
+                else {
+                    let resData = [];
+                    this.mainData.listChain.forEach(e => {
+                        if (this.CreateSlug(e.name).indexOf(keyword) !== -1) resData.push(e);
+                    })
+
+                    return resData;
                 }
             }
         }
@@ -159,17 +165,19 @@
         width: 80px;
         height: 80px;
         background-size: cover;
-        margin:20px;
+        margin: 20px;
         position: absolute;
     }
-    .shopSmallName{
-        color:white;
+
+    .shopSmallName {
+        color: white;
         font-family: "Open Sans";
-        margin-left:20px;
-        margin-top:110px;
-        font-size:24px;
+        margin-left: 20px;
+        margin-top: 110px;
+        font-size: 24px;
         position: absolute;
     }
+
     .rateStar .fa-star {
         color: #FCEB12;
         font-size: 18px;
@@ -179,7 +187,7 @@
         color: rgba(45, 45, 48, .4);
         cursor: pointer;
         text-align: center;
-        font-size:18px;
+        font-size: 18px;
     }
 
     .buttonFlat:hover {

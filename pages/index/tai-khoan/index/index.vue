@@ -1,22 +1,8 @@
 <template>
-    <div class="box" style="padding:10px;">
-        {{yourAddress}}<br>
-        <button class="btn" @click="EB.$emit('getCurrentLocation')">Get Current Location</button>
-        <div style="position: relative; margin-top:20px; height:500px;">
-            <gmap-map style="width: 100%; height: 100%; position: absolute; left:0; top:0"
-                      :center="$store.state.currentLocation"
-                      :zoom="10"
-            >
-                <gmap-marker
-                        :key="index"
-                        v-for="(m, index) in markers"
-                        :position="m.position"
-                        :clickable="true"
-                        :draggable="true"
-                        @click="center=m.position"
-                ></gmap-marker>
-            </gmap-map>
-        </div>
+    <div class="box" style="padding:10px; min-height: 300px; padding-bottom:20px;">
+        <span class="el-icon-success" style="font-size:90px; padding-top:50px; padding-bottom:30px; color:rgba(45,45,48,.2); width:100%; text-align:center;"></span><br/>
+        <p style="text-align:center; width:100%; font-size:32px; font-weight: bold; color:rgba(45,45,48,.6)">SPADI.VN</p>
+        <p style="text-align:center; width:100%;">Chào mừng đến với Spadi.vn</p>
     </div>
 </template>
 <script>

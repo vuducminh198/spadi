@@ -11,12 +11,12 @@
                         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 
-                        <form method="get" action="http://spadi.vn/search-page/" autocomplete="off">
+                        <form @submit="m_Filter($event)" autocomplete="off">
                             <input type="text" name="keyword    " value="    " class="keyword"
-                                   placeholder="Tìm kiếm khuyến mãi và cửa hàng"/>
+                                   placeholder="Tìm kiếm khuyến mãi và cửa hàng" v-model="v.keyword"/>
                             <i class="pline-magnifier"></i>
                             <div class="keyword_suggest_stores"></div>
-                            <a href="javascript:;" class="submit-form btn">Tìm kiếm</a>
+                            <a href="javascript:;" class="submit-form btn" @click="m_Filter">Tìm kiếm</a>
                         </form>
                     </div>
                     <div class="pull-right">
@@ -328,7 +328,8 @@
         data() {
             return {
                 v: {
-                    menuRightIsShow: false
+                    menuRightIsShow: false,
+                    keyword: '',
                 }
             }
         },
@@ -410,6 +411,10 @@
                 });
                 this.$store.commit('updateClientToken', '');
                 window.location.reload();
+            },
+            m_Filter(e) {
+                if (typeof e !== 'undefined') e.preventDefault();
+                this.$router.push('/tim-kiem?q=' + this.v.keyword);
             }
         }
     }

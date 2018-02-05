@@ -1,10 +1,10 @@
 <style scoped>
-    .mstransparentButton{
-        background:transparent;
-        color:black;
+    .mstransparentButton {
+        background: transparent;
+        color: black;
         font-size: 10px;
-        border:0;
-        padding:0;
+        border: 0;
+        padding: 0;
     }
 </style>
 <template>
@@ -16,13 +16,13 @@
             <!-- Sidebar user panel (optional) -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img :src="pictureUrl"/>
+
                 </div>
                 <div class="pull-left info">
                     <div>
-                        <p class="white">{{ $store.state.adminInfo.name }}</p>
+                        <p class="white">Vũ Đức Minh</p>
                     </div>
-                    <button class="mstransparentButton"  @click="m_logoutAdmin">
+                    <button class="mstransparentButton" @click="m_logoutAdmin">
                         <i class="fa fa-circle text-success"></i> Online
                         (<span>Đăng xuất</span>)
                     </button>
@@ -30,7 +30,7 @@
             </div>
 
             <!-- search form (Optional) -->
-            <form v-on:submit.prevent class="sidebar-form">
+            <form class="sidebar-form">
                 <div class="input-group">
                     <input type="text"
                            style="border:0!important"
@@ -60,8 +60,12 @@
 
 
     export default {
+        head() {
+            return {
+
+            }
+        },
         name: 'Sidebar',
-        props: ['displayName', 'pictureUrl'],
         components: {SidebarMenu},
         beforeMount() {
 
@@ -71,9 +75,7 @@
         },
         methods: {
             m_logoutAdmin() {
-                this.setCookie('token','');
-                this.$store.commit('updateToken','');
-                this.$router.push('/quan-tri/dang-nhap');
+
             }
         }
     }

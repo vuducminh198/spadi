@@ -2,20 +2,21 @@
     <div class="container" style="margin-top:20px;">
         <div class="col-sm-4">
             <div style="background-color:white; padding: 26px;">
-                <h6 class="headText">Danh mục</h6>
+                <el-input clearable placeholder="Nhập Coupon cần tìm!" v-model="v.keyword"></el-input>
+                <h6 class="headText" style="margin-top:20px;">Danh mục</h6>
                 <ul v-if="!mainData.isErrorGetCategory"
                     style="margin:0; padding:0; list-style-type: none; margin-top:30px;">
-                    <li v-for="item in mainData.listCategory" style="font-family: 'Open Sans'; font-size:15px;">
+                    <li v-for="item in mainData.listCategory"
+                        style="font-family: 'Open Sans'; font-size:14px; overflow: hidden; text-overflow: ellipsis;">
                         <el-checkbox></el-checkbox>
                         {{item.name}}
                     </li>
                 </ul>
-            </div>
-            <div style="background-color:white; padding: 26px; margin-top:30px;">
-                <h6 class="headText">Tỉnh thành</h6>
+
+                <h6 class="headText" style="margin-top:20px;">Tỉnh thành</h6>
                 <ul v-if="!mainData.isErrorGetCity"
                     style="margin:0; padding:0; list-style-type: none; margin-top:20px;">
-                    <li style="font-family: 'Open Sans'; font-size:15px;" v-for="item,index in mainData.listCity"
+                    <li style="font-family: 'Open Sans'; font-size:14px;" v-for="item,index in mainData.listCity"
                         v-show="index<5 || index>=5 && v.showMoreListCity">
                         <el-checkbox></el-checkbox>
                         {{item.name}}
@@ -28,32 +29,33 @@
                 </ul>
 
             </div>
-            <div style="background-color:white; padding: 26px; margin-top:30px;">
-                <h6 class="headText">Trạng thái</h6>
-                <ul style="margin:0; padding:0; list-style-type: none; margin-top:20px; font-family: 'Open Sans'; font-size:15px;">
-                    <li>
-                        <el-checkbox></el-checkbox>
-                        Có coupon
-                    </li>
-                    <li>
-                        <el-checkbox></el-checkbox>
-                        Có giảm giá
-                    </li>
-                    <li>
-                        <el-checkbox></el-checkbox>
-                        Sản phẩm mới
-                    </li>
-                </ul>
-            </div>
         </div>
-        <div class="col-sm-8">
-            <template v-if="!mainData.isErrorGetCoupon">
-                <div v-for="item in mainData.listCoupon" class="col-sm-6" style="margin-bottom:20px;">
-                    <div style="background-color:white;">
+        <div class="col-sm-8 mgr-o" style="padding:0;">
+            <p v-if="v.keyword.trim().length>0">Hiển thị kết quả cho từ khóa: {{v.keyword}}</p>
+            <template v-if="!mainData.isErrorCoupon">
+                <div class="col-md-4 col-sm-6 col-xs-6 mxColumn"
+                     style="padding-left:0; padding-right:7.5px; margin-bottom:15px;"
+                     v-for="item,index in c_listCoupon">
+                    <div style=" border-top:0px; padding-bottom:0;text-overflow: ellipsis; border-radius: 0; background-color:white">
+                        <div :style="`width:100%; height:180px; background-size:cover; background-image:url(${img_base+item.images[0]}); position:relative`">
 
+                        </div>
+                        <div style="padding:15px; padding-bottom:0;">
+                            <span style="margin-top:5px;"><span class="fa fa-clock-o"></span>  <time-count-down
+                                    :to="item.to"></time-count-down></span>
+                            <div style="font-size:18px; max-height:50px;  height:50px; text-overflow: ellipsis; overflow: hidden">
+                                {{item.title}}
+                            </div>
+
+
+                            <div style="margin-top:8px;">
+                                <btn-code title="XEM" @click="$router.push(`/coupon/${item.slug}`)"></btn-code>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
+
+
             </template>
 
         </div>
@@ -68,11 +70,11 @@
         async asyncData() {
             let mainData = {};
             await axios.get(process.env.API.Coupon_PublicGet)
-                .then(res => {
-                    mainData.listCoupon = res.data;
+                .then(data => {
+                    mainData.listCoupon = data.data;
                 })
                 .catch(error => {
-                    mainData.isErrorGetCoupon = true;
+                    mainData.isErrorCoupon = true;
                 })
             await  axios.get(process.env.API.Category_Get)
                 .then(data => {
@@ -93,7 +95,22 @@
         data() {
             return {
                 v: {
-                    showMoreListCity: false
+                    showMoreListCity: false,
+                    keyword: '',
+                }
+            }
+        },
+        computed: {
+            c_listCoupon()
+            {
+                let keyword = this.CreateSlug(this.v.keyword.trim());
+                if (keyword.length === 0) return this.mainData.listCoupon;
+                else {
+                    let resData = [];
+                    this.mainData.listCoupon.forEach(e => {
+                        if (this.CreateSlug(e.title).indexOf(keyword) !== -1) resData.push(e);
+                    })
+                    return resData;
                 }
             }
         }
@@ -159,5 +176,12 @@
     .buttonFlat:hover {
 
         color: rgba(45, 45, 48, 1);
+    }
+
+    @media (max-width: 768px) {
+        .mgr-o {
+            margin-top: 20px;
+            padding: 0;
+        }
     }
 </style>

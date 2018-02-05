@@ -60,6 +60,20 @@
 </style>
 <template>
     <div>
+        <a id="shareGoogleButton" style="display: none;" :href="`https://plus.google.com/share?url=${currentLocation}`"
+           onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+        </a>
+        <a id="shareFacebookButton" style="display: none;"
+           :href="`https://www.facebook.com/sharer/sharer.php?u=${currentLocation}`"
+           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+           target="_blank" title="Share on Facebook">
+        </a>
+        <a id="shareTwitterButton" style="display: none;"
+           :href="`https://twitter.com/share?url=${currentLocation}`"
+           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+           target="_blank" title="Share on Twitter">
+        </a>
         <label>Chia sẻ</label>
         <div>
             <div class="containerItem google">
@@ -109,17 +123,27 @@
 
 
         },
-        computed: {},
+        computed: {
+            currentLocation() {
+                return window.location.href;
+            }
+        },
         methods: {
             m_shareOn(type) {
-                FB.ui({
-                    method: 'feed',
-                    link: this.currentHref(),
-                    caption: this.data.title,
-                }, function(response){
-
-                });
-            },
+                console.log(type);
+                if (type === 'google')
+                    $('#shareGoogleButton').click();
+                if (type === 'facebook')
+                    $('#shareFacebookButton').click();
+                if (type === 'twitter')
+                    $('#shareTwitterButton').click();
+                if (type === 'instagram')
+                    this.$notify({
+                        title: 'Opps',
+                        message: 'Chưa sẵn sàng!',
+                        type: 'warning'
+                    })
+            }
 
         }
     }

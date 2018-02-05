@@ -14,31 +14,31 @@
                         </li>
                         <nuxt-link tag="li" class="pageLink" :to="`/cua-hang/${mainData.shopInfo.slug}/coupon/`">
                             <a>
-                                <i class="material-icons"></i>
+                                <i class="material-icons">toll</i>
                                 <span class="page">COUPON</span>
                             </a>
                         </nuxt-link>
                         <nuxt-link tag="li" class="pageLink" :to="`/cua-hang/${mainData.shopInfo.slug}/deal/`">
                             <a>
-                                <i class="material-icons"></i>
+                                <i class="material-icons">redeem</i>
                                 <span class="page">DEAL</span>
                             </a>
                         </nuxt-link>
                         <nuxt-link tag="li" class="pageLink" :to="`/cua-hang/${mainData.shopInfo.slug}/san-pham/`">
                             <a>
-                                <i class="material-icons"></i>
+                                <i class="material-icons">opacity</i>
                                 <span class="page">SẢN PHẨM</span>
                             </a>
                         </nuxt-link>
                         <nuxt-link tag="li" class="pageLink" :to="`/cua-hang/${mainData.shopInfo.slug}/tin-tuc/`">
                             <a>
-                                <i class="material-icons"></i>
+                                <i class="material-icons">web</i>
                                 <span class="page">TIN TỨC</span>
                             </a>
                         </nuxt-link>
                         <nuxt-link tag="li" class="pageLink" :to="`/cua-hang/${mainData.shopInfo.slug}/danh-gia`">
                             <a>
-                                <i class="material-icons"></i>
+                                <i class="material-icons">turned_in_not</i>
                                 <span class="page">ĐÁNH GIÁ</span>
                             </a>
                         </nuxt-link>

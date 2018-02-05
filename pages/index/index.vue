@@ -11,7 +11,7 @@
                         <i class="pline-magnifier"></i>
                         <div class="keyword_suggest_stores"></div>
                     </div>
-                    <a href="javascript:;" class="submit-form btn">Tìm kiếm</a>
+                    <a href="javascript:;" class="submit-form btn" @click="m_filter">Tìm kiếm</a>
                 </form>
             </div>
         </section>
@@ -19,8 +19,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-
-
                     </div>
                 </div>
                 <div class="page-content clearfix">
@@ -405,8 +403,21 @@
 </template>
 <script>
     export default {
+        scrollToTop: true,
         head:{
-            title:'Trang chủ'
+            title:'Trang chủ - Spadi.vn'
+        },
+        data(){
+            return {
+                v:{
+                    keyword:'',
+                }
+            }
+        },
+        methods:{
+            m_filter(){
+
+            }
         }
     }
 </script>

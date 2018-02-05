@@ -1,5 +1,9 @@
 <template>
-    <div class="box" style="padding:10px">
+    <div style="padding:10px; background-color:white;">
+        <div style="font-size:18px; font-family: 'Open Sans'; margin-bottom:10px;">
+            CỬA HÀNG CỦA BẠN
+        </div>
+        <div style="padding:10px; background-color:white;">
         <div>
             <el-button icon="el-icon-plus" @click="$router.push('/tai-khoan/chain/tao-moi')">THÊM CỬA HÀNG</el-button>
         </div>
@@ -25,13 +29,15 @@
                     </td>
                     <td>
                         <el-button-group>
-                            <el-button icon="el-icon-edit"></el-button>
+                            <el-button icon="el-icon-edit"
+                                       @click="$router.push(`/tai-khoan/chain/cap-nhat?_=${item._id}`)"></el-button>
                             <el-button icon="el-icon-close"></el-button>
                         </el-button-group>
                     </td>
                 </tr>
                 </tbody>
             </table>
+        </div>
         </div>
     </div>
 </template>

@@ -37,8 +37,10 @@
 <template>
 
 
-    <div :class="!noBox?'box':''" style="padding:10px; ">
-
+    <div style="padding:10px; background-color:white;">
+        <div style="font-family: 'Open Sans'; font-size:18px; margin-bottom:10px;">
+            TẠO MỚI TIN TỨC
+        </div>
         <form @submit="m_formAddDealSubmit($event)">
             <div>
                 <div class="container-fluid" style="padding:0;">

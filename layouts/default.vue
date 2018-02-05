@@ -34,13 +34,7 @@
                 }(document, 'script', 'facebook-jssdk'));
             })
             if (process.browser) {
-                this.EB.$on('updateCurrentLocation', (data) => {
-                    this.$store.commit('updateCurrentLocation', {
-                        lat: data.coords.latitude,
-                        lng: data.coords.longitude
-                    });
-                    document.cookie = 'currentLocation=' + data.coords.latitude + '-' + data.coords.longitude;
-                })
+            
 
             }
         }

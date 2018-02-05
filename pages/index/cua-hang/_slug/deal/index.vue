@@ -12,8 +12,8 @@
                 </div>
                 <div style="padding:10px;">
                 <span>
-                    <span style="color:#ff5722;     flex-flow: row nowrap;  align-items: baseline; font-size: 32px; font-size: 2rem;font-weight: 700; font-family: 'Open Sans'">{{'11111' | VN}}</span>&nbsp; <strike>
-                    <span style="font-family: 'Open Sans'; ">{{'1111' | VN}}</span></strike></span>
+                    <span style="color:#ff5722;     flex-flow: row nowrap;  align-items: baseline; font-size: 32px; font-size: 2rem;font-weight: 700; font-family: 'Open Sans'">{{ finalPrice(item) | VN}}</span>&nbsp; <strike>
+                    <span style="font-family: 'Open Sans'; ">{{item.price | VN}}</span></strike></span>
             
 
                     <table class="table" style="padding:0; margin:0;">

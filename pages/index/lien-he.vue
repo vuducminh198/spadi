@@ -1,8 +1,9 @@
 <template>
-    <div>
-        <div class="container">
+    <div style="margin-top:50px;">
+        <div class="container" style="margin-top:30px;">
+            <p style="font-size:32px;">LIÊN HỆ</p>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8" style="padding:0;">
                     <div class="contact_map"><input type="hidden" value="41.8919972,-87.7260233"
                                                     class="contact_map_marker">
                         <div class="embed-responsive embed-responsive-16by9">
@@ -337,7 +338,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" style="padding-right:0;">
                     <div class="widget white-block">
                         <div class="contact-widget-wrap">
                             <h6>Additional Info</h6>
@@ -363,7 +364,8 @@
 
                     </div>
                 </div>
-                <div class="col-sm-12 box">
+                <div></div>
+                <div class="col-sm-12 " style="background-color:white; margin-top:20px;">
                     <div class="white-block">
                         <div class="white-block-content">
                             <h5>Send a message</h5>

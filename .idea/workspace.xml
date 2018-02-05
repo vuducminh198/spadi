@@ -2,52 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa61335-83ac-47fd-8657-48e265a59e5c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/components/shareOn.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/components/timeCountDown.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/clientIsManager.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/clientIsUser.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/components/exCom.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/adminLogin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/middleware/login_AdminIsLogin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/coupon/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/cua-hang/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/deal/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/dia-diem/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/ex.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/cap-nhat.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/cap-nhat.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/cap-nhat.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/post/cap-nhat.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/cap-nhat.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tim-kiem/danh-muc/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tim-kiem/danh-muc/_category.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tim-kiem/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tim-kiem/thanh-pho/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tim-kiem/thanh-pho/_city.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tin-tuc/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tin-tuc/_new.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/index/tin-tuc/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/dang-nhap.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/ca-nhan/doi-mat-khau.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/ca-nhan/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/ca-nhan/thong-tin.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/chain/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/chain/cap-nhat.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/chain/danh-sach.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/chain/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/chain/tao-moi.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/coupon/cap-nhat.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/coupon/danh-sach.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/coupon/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/coupon/tao-moi.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/deal/cap-nhat.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/deal/danh-sach.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/deal/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/deal/tao-moi.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/post/danh-sach.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/post/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/post/tao-moi.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/shop/404.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/shop/cap-nhat.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/shop/danh-sach.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/shop/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/pages/quan-tri/index/shop/tao-moi.vue" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/assets/css/froala_editor.pkgd.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/assets/css/froala_style.min.css" afterPath="" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/components/buttonGreen.vue" afterPath="$PROJECT_DIR$/components/buttonGreen.vue" />
+      <change beforePath="$PROJECT_DIR$/components/Sidebar.vue" afterPath="$PROJECT_DIR$/components/Sidebar.vue" />
       <change beforePath="$PROJECT_DIR$/components/getCode.vue" afterPath="$PROJECT_DIR$/components/getCode.vue" />
+      <change beforePath="$PROJECT_DIR$/components/shareOn.vue" afterPath="$PROJECT_DIR$/components/shareOn.vue" />
       <change beforePath="$PROJECT_DIR$/layouts/default.vue" afterPath="$PROJECT_DIR$/layouts/default.vue" />
-      <change beforePath="$PROJECT_DIR$/middleware/isLoginClient.js" afterPath="$PROJECT_DIR$/middleware/isLoginClient.js" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.js" afterPath="$PROJECT_DIR$/nuxt.config.js" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/dia-diem/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/dang-ky.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/dang-nhap.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/chain/danh-sach.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/chain/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/chain/tao-moi.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/coupon/danh-sach.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/coupon/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/coupon/tao-moi.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/deal/danh-sach.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/deal/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/deal/tao-moi.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/shop/danh-sach.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/shop/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/index/shop/tao-moi.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/quen-mat-khau.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/index/tai-khoan/xac-thuc.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/quan-tri/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/a/quan-tri/index/chain/danh-sach.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/index/coupon/chi-tiet.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/index/coupon/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/index/deal/index.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/404.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/tin-tuc/index2.vue" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" afterPath="$PROJECT_DIR$/pages/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/coupon/chi-tiet.vue" afterPath="$PROJECT_DIR$/pages/index/coupon/_coupon.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/coupon/index.vue" afterPath="$PROJECT_DIR$/pages/index/coupon/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/_slug.vue" afterPath="$PROJECT_DIR$/pages/index/cua-hang/_slug.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/_slug/deal/index.vue" afterPath="$PROJECT_DIR$/pages/index/cua-hang/_slug/deal/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/_slug/index.vue" afterPath="$PROJECT_DIR$/pages/index/cua-hang/_slug/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/index.vue" afterPath="$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/index.vue" afterPath="$PROJECT_DIR$/pages/index/cua-hang/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/deal/chi-tiet.vue" afterPath="$PROJECT_DIR$/pages/index/deal/_deal.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/deal/index.vue" afterPath="$PROJECT_DIR$/pages/index/deal/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/dia-diem/index.vue" afterPath="$PROJECT_DIR$/pages/index/dia-diem/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.vue" afterPath="$PROJECT_DIR$/pages/index/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/lien-he.vue" afterPath="$PROJECT_DIR$/pages/index/lien-he.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/gio-hang.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/gio-hang.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/danh-sach.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/danh-sach.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/tao-moi.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/tao-moi.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/danh-sach.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/danh-sach.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/tao-moi.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/tao-moi.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/danh-sach.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/danh-sach.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/tao-moi.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/tao-moi.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/index.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/post/danh-sach.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/post/danh-sach.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/post/tao-moi.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/post/tao-moi.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/danh-sach.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/danh-sach.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/tao-moi.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/tao-moi.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/quan-tri/index.vue" afterPath="$PROJECT_DIR$/pages/quan-tri/index.vue" />
+      <change beforePath="$PROJECT_DIR$/pages/quan-tri/index/index.vue" afterPath="$PROJECT_DIR$/pages/quan-tri/index/index.vue" />
       <change beforePath="$PROJECT_DIR$/plugins/main.js" afterPath="$PROJECT_DIR$/plugins/main.js" />
-      <change beforePath="$PROJECT_DIR$/spadishop.rar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/customize.css" afterPath="$PROJECT_DIR$/static/css/customize.css" />
       <change beforePath="$PROJECT_DIR$/store/index.js" afterPath="$PROJECT_DIR$/store/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +102,6 @@
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
@@ -69,8 +111,52 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="spadishop" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2160">
+              <caret line="146" column="21" lean-forward="true" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nuxt.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nuxt.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="107" column="77" lean-forward="false" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="404.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/404.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,22 +167,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>image_base</find>
-      <find>Clip</find>
-      <find>&lt;time-</find>
-      <find>.addDeal.</find>
-      <find>name</find>
-      <find>form-tr</find>
-      <find>time</find>
-      <find>Thời gia</find>
-      <find>.name</find>
-      <find>noBorder</find>
-      <find>.ClientSubMenu</find>
-      <find>OverCode</find>
-      <find>ClientSubMenu</find>
-      <find>length</find>
-      <find>listCoupon</find>
-      <find>m_showCode</find>
       <find>fa</find>
       <find>face</find>
       <find>pre&gt;</find>
@@ -111,6 +181,22 @@
       <find>btn</find>
       <find>'shop'</find>
       <find>ro</find>
+      <find>addDeal.title</find>
+      <find>&lt;time</find>
+      <find>listCoupon</find>
+      <find>navigator</find>
+      <find>.name</find>
+      <find>name</find>
+      <find>mxLinkClass</find>
+      <find>.chain</find>
+      <find>fil</find>
+      <find>m_usingCityAndDistrict</find>
+      <find>m_getInfoCurrentLocation</find>
+      <find>logo</find>
+      <find>keyword</find>
+      <find>111</find>
+      <find>fina</find>
+      <find>m_formAddDealSubmit</find>
     </findStrings>
     <replaceStrings>
       <replace>nuxt-link</replace>
@@ -130,6 +216,8 @@
       <replace>mainData.</replace>
       <replace>.addPost.</replace>
       <replace>listDeal</replace>
+      <replace>listPost</replace>
+      <replace>m_formUpdatePost</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -138,63 +226,70 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/danh-sach.vue" />
-        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/danh-sach.vue" />
-        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/tao-moi.vue" />
-        <option value="$PROJECT_DIR$/components/timeCountDown.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/cap-nhat.vue" />
         <option value="$PROJECT_DIR$/components/getCode.vue" />
-        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/index.vue" />
-        <option value="$PROJECT_DIR$/components/buttonGreen.vue" />
-        <option value="$PROJECT_DIR$/pages/index/coupon/chi-tiet.vue" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/layouts/default.vue" />
-        <option value="$PROJECT_DIR$/plugins/main.js" />
-        <option value="$PROJECT_DIR$/pages/index/deal/chi-tiet.vue" />
-        <option value="$PROJECT_DIR$/pages/index/tai-khoan/gio-hang.vue" />
-        <option value="$PROJECT_DIR$/pages/index/lien-he/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/lien-he.vue" />
-        <option value="$PROJECT_DIR$/pages/_slug.vue" />
-        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/danh-gia.vue" />
-        <option value="$PROJECT_DIR$/pages/index/404.vue" />
-        <option value="$PROJECT_DIR$/static/css/customize.css" />
-        <option value="$PROJECT_DIR$/store/index.js" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/deal/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/deal/chi-tiet.vue" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/post/tao-moi.vue" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/tin-tuc/index.vue" />
-        <option value="$PROJECT_DIR$/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/tin-tuc/_new.vue" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/tin-tuc/404.vue" />
-        <option value="$PROJECT_DIR$/pages/index/deal/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/coupon/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/san-pham/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/san-pham/_product.vue" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/coupon/chi-tiet.vue" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/coupon/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/_slug/coupon/_coupon.vue" />
-        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/tao-moi.vue" />
-        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/tao-moi.vue" />
-        <option value="$PROJECT_DIR$/pages/quan-tri/quan-tri.vue" />
-        <option value="$PROJECT_DIR$/pages/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/quan-tri.vue" />
+        <option value="$PROJECT_DIR$/pages/index/deal/_deal.vue" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/index/dang-nhap.vue" />
+        <option value="$PROJECT_DIR$/middleware/checkLoginClient.js" />
+        <option value="$PROJECT_DIR$/middleware/adminLogin.js" />
+        <option value="$PROJECT_DIR$/middleware/login_AdminIsLogin.js" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/dang-nhap.vue" />
         <option value="$PROJECT_DIR$/pages/quan-tri/index.vue" />
-        <option value="$PROJECT_DIR$/pages/quan-tri/index/index.vue" />
-        <option value="$PROJECT_DIR$/nuxt.config.js" />
-        <option value="$PROJECT_DIR$/pages/index/_slug.vue" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/index/post/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/pages/quan-tri/index/post/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/components/exCom.vue" />
+        <option value="$PROJECT_DIR$/pages/index/ex.vue" />
+        <option value="$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/_new.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tin-tuc/_new.vue" />
+        <option value="$PROJECT_DIR$/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/pages/index/tim-kiem/coupon/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index.vue" />
+        <option value="$PROJECT_DIR$/store/index.js" />
+        <option value="$PROJECT_DIR$/pages/index/tim-kiem/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/coupon/_coupon.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tin-tuc/index.vue" />
         <option value="$PROJECT_DIR$/pages/index/cua-hang/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/cua-hang/_slug.vue" />
+        <option value="$PROJECT_DIR$/pages/index/coupon/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/deal/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/lien-he.vue" />
+        <option value="$PROJECT_DIR$/pages/index/dia-diem/index.vue" />
         <option value="$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/cua-hang/_slug/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/gio-hang.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/post/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/cap-nhat.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/chain/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/shop/cap-nhat.vue" />
+        <option value="$PROJECT_DIR$/plugins/main.js" />
         <option value="$PROJECT_DIR$/pages/index/cua-hang/_slug/deal/index.vue" />
-        <option value="$PROJECT_DIR$/pages/index/cua-hang/_slug/deal/_deal.vue" />
-        <option value="$PROJECT_DIR$/pages/index/cua-hang/_slug/coupon/index.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/cap-nhat.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/post/cap-nhat.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/post/danh-sach.vue" />
+        <option value="$PROJECT_DIR$/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/components/shareOn.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/deal/tao-moi.vue" />
+        <option value="$PROJECT_DIR$/pages/index/tai-khoan/index/index.vue" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
     <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -211,10 +306,32 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="165" />
-    <option name="y" value="33" />
-    <option name="width" value="919" />
-    <option name="height" value="643" />
+    <option name="x" value="466" />
+    <option name="y" value="19" />
+    <option name="width" value="1085" />
+    <option name="height" value="644" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Eslint</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -232,8 +349,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,56 +377,37 @@
               <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cua-hang" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tai-khoan" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
               <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cua-hang" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_slug" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tai-khoan" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
               <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cua-hang" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_slug" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="coupon" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="plugins" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
               <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cua-hang" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_slug" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="deal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
               <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cua-hang" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_slug" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="san-pham" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cua-hang" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_slug" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tin-tuc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="store" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,23 +419,27 @@
     <property name="node.js.selected.package.eslint" value="D:\HappyCode\spadishop\node_modules\eslint" />
     <property name="standardjs.codestyle.accepted" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
     <property name="ToolWindowTerminal.ShowToolbar" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\HappyCode\spadishop\pages\quan-tri" />
       <recent name="D:\HappyCode\spadishop\pages\index\cua-hang" />
       <recent name="D:\HappyCode\spadishop\pages\index" />
       <recent name="D:\HappyCode\spadishop\pages" />
       <recent name="D:\HappyCode\spadishop\pages\a" />
-      <recent name="D:\HappyCode\spadishop\pages\index\_slug" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\HappyCode\spadishop\pages" />
-      <recent name="D:\HappyCode\spadishop\pages\index\_slug\coupon" />
-      <recent name="D:\HappyCode\spadishop\pages\index\_slug\deal" />
-      <recent name="D:\HappyCode\spadishop\pages\index\_slug\san-pham" />
-      <recent name="D:\HappyCode\spadishop\pages\index\_slug\tin-tuc" />
+      <recent name="D:\HappyCode\spadishop\pages\index\tai-khoan\index\post" />
+      <recent name="D:\HappyCode\spadishop\pages\index\tim-kiem\thanh-pho" />
+      <recent name="D:\HappyCode\spadishop\pages\index\tim-kiem\danh-muc" />
+      <recent name="D:\HappyCode\spadishop\pages\index\tim-kiem\coupon" />
+      <recent name="D:\HappyCode\spadishop\pages\quan-tri" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -404,15 +504,44 @@
       <workItem from="1516853439662" duration="4380000" />
       <workItem from="1516863478032" duration="10675000" />
       <workItem from="1516875234581" duration="2203000" />
-      <workItem from="1516933619302" duration="2787000" />
+      <workItem from="1516933619302" duration="20928000" />
+      <workItem from="1516964163975" duration="582000" />
+      <workItem from="1517019019985" duration="5580000" />
+      <workItem from="1517112859658" duration="43000" />
+      <workItem from="1517113234498" duration="221000" />
+      <workItem from="1517113475867" duration="164000" />
+      <workItem from="1517134174766" duration="4000" />
+      <workItem from="1517193180188" duration="2601000" />
+      <workItem from="1517199852117" duration="6631000" />
+      <workItem from="1517217725936" duration="6220000" />
+      <workItem from="1517278396224" duration="693000" />
+      <workItem from="1517282325543" duration="4362000" />
+      <workItem from="1517287337470" duration="371000" />
+      <workItem from="1517365680802" duration="54000" />
+      <workItem from="1517365760871" duration="17587000" />
+      <workItem from="1517624436814" duration="618000" />
+      <workItem from="1517627080792" duration="2019000" />
+      <workItem from="1517629702619" duration="1570000" />
+      <workItem from="1517632513515" duration="18463000" />
+      <workItem from="1517797855789" duration="17313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="355249000" />
+    <option name="totallyTimeSpent" value="458486000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="165" y="33" width="919" height="643" extended-state="0" />
+    <frame x="466" y="19" width="1085" height="644" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -420,10 +549,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2451193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41094297" sideWeight="0.4859287" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22731525" sideWeight="0.4859287" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Storybook" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20864947" sideWeight="0.5140713" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32605305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16187595" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -433,7 +562,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24975985" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Storybook" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20864947" sideWeight="0.5140713" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -444,17 +573,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2451193" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18627451" sideWeight="0.4859287" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22018349" sideWeight="0.4859287" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24975985" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Storybook" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20864947" sideWeight="0.5140713" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780847" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16187595" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -468,89 +597,56 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="31" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/a/index/tai-khoan/index.vue" />
-    <entry file="file://$PROJECT_DIR$/plugins/main.js">
+    <entry file="file://$PROJECT_DIR$/pages/index/ex.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="127" column="25" lean-forward="false" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
+        <state relative-caret-position="208">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/danh-gia.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/404.vue" />
-    <entry file="file://$PROJECT_DIR$/static/css/customize.css">
+    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/_new.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="79" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index/post/tao-moi.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <caret line="78" column="51" lean-forward="true" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store/index.js">
+    <entry file="file://$PROJECT_DIR$/pages/index/tin-tuc/_new.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="240">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/a/index/deal/chi-tiet.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/deal/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/deal/chi-tiet.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/tai-khoan/index/deal/index.vue" />
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/a/index/coupon/chi-tiet.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/tai-khoan/index/post/tao-moi.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/tin-tuc/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/cua-hang/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/tin-tuc/404.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/tin-tuc/_new.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/deal/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/coupon/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/san-pham/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/san-pham/_product.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/san-pham/404.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/deal/404.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/coupon/404.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/index/_slug/coupon/chi-tiet.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/coupon/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/_slug/coupon/_coupon.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/tai-khoan/index/coupon/tao-moi.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/tai-khoan/index/deal/tao-moi.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/quan-tri/index/deal/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/quan-tri.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/quan-tri/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/a/index.vue" />
-    <entry file="file://$PROJECT_DIR$/pages/index/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="651">
+          <caret line="174" column="6" lean-forward="false" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/quan-tri.vue" />
-    <entry file="file://$PROJECT_DIR$/layouts/default.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/quan-tri/dang-nhap.vue">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -558,74 +654,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index.vue">
+    <entry file="file://$PROJECT_DIR$/pages/index/tim-kiem/coupon/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="16">
+          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/quan-tri/index/index.vue">
+    <entry file="file://$PROJECT_DIR$/pages/index/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        <state relative-caret-position="464">
+          <caret line="412" column="27" lean-forward="false" selection-start-line="412" selection-start-column="20" selection-end-line="412" selection-end-column="27" />
           <folding>
-            <element signature="e#3498#3923#0" expanded="false" />
-            <element signature="e#3961#4074#0" expanded="false" />
+            <element signature="n#section#1;n#div#0;n#template#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.vue">
+    <entry file="file://$PROJECT_DIR$/pages/index/tim-kiem/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="220" column="8" lean-forward="false" selection-start-line="220" selection-start-column="8" selection-end-line="220" selection-end-column="8" />
+        <state relative-caret-position="128">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="33" selection-end-column="22" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tin-tuc/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="92" column="52" lean-forward="false" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="75" column="105" lean-forward="false" selection-start-line="75" selection-start-column="105" selection-end-line="75" selection-end-column="105" />
-          <folding />
+        <state relative-caret-position="432">
+          <caret line="126" column="46" lean-forward="false" selection-start-line="126" selection-start-column="46" selection-end-line="126" selection-end-column="46" />
+          <folding>
+            <element signature="n#ul#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/deal/_deal.vue">
+    <entry file="file://$PROJECT_DIR$/pages/index/deal/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="276" column="95" lean-forward="false" selection-start-line="276" selection-start-column="95" selection-end-line="276" selection-end-column="95" />
+        <state relative-caret-position="256">
+          <caret line="37" column="116" lean-forward="false" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/index.vue">
+    <entry file="file://$PROJECT_DIR$/pages/index/coupon/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="82" column="44" lean-forward="false" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="320">
+          <caret line="102" column="17" lean-forward="false" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+          <folding>
+            <element signature="n#ul#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#template#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/san-pham/index.vue">
+    <entry file="file://$PROJECT_DIR$/pages/index/lien-he.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="340" column="61" lean-forward="false" selection-start-line="340" selection-start-column="61" selection-end-line="340" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tim-kiem/danh-muc/_category.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -633,18 +748,359 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/deal/index.vue">
+    <entry file="file://$PROJECT_DIR$/pages/index/tim-kiem/coupon/404.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="38" column="129" lean-forward="false" selection-start-line="38" selection-start-column="129" selection-end-line="38" selection-end-column="129" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/coupon/index.vue">
+    <entry file="file://$PROJECT_DIR$/pages/index/tim-kiem/danh-muc/404.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="36" column="89" lean-forward="false" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#template#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/deal/_deal.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="298" column="45" lean-forward="false" selection-start-line="298" selection-start-column="45" selection-end-line="298" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/coupon/_coupon.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="275" column="24" lean-forward="true" selection-start-line="275" selection-start-column="24" selection-end-line="275" selection-end-column="24" />
+          <folding>
+            <element signature="n#el-dialog#0;n#template#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#el-dialog#1;n#template#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#el-dialog#2;n#template#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/gio-hang.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="125" column="90" lean-forward="false" selection-start-line="125" selection-start-column="90" selection-end-line="125" selection-end-column="90" />
+          <folding>
+            <element signature="n#el-carousel#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#table#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#1;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#label#2;n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tim-kiem/thanh-pho/_city.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tim-kiem/thanh-pho/404.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/chain/danh-sach.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/chain/cap-nhat.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/chain/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/shop/danh-sach.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/shop/cap-nhat.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/shop/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="34" column="98" lean-forward="false" selection-start-line="34" selection-start-column="98" selection-end-line="34" selection-end-column="98" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/deal/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="194" lean-forward="false" selection-start-line="14" selection-start-column="194" selection-end-line="14" selection-end-column="194" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/deal/danh-sach.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="68" lean-forward="false" selection-start-line="5" selection-start-column="68" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/danh-sach.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/coupon/cap-nhat.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/post/cap-nhat.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="235" column="10" lean-forward="false" selection-start-line="235" selection-start-column="10" selection-end-line="235" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/post/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="42" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/post/danh-sach.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/shareOn.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="135" column="40" lean-forward="false" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/deal/_deal.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="137" column="47" lean-forward="false" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/deal/tao-moi.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="245" column="46" lean-forward="false" selection-start-line="245" selection-start-column="46" selection-end-line="245" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+          <folding>
+            <element signature="e#2622#2848#0" expanded="false" />
+            <element signature="e#2912#3140#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/dia-diem/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="393" column="50" lean-forward="false" selection-start-line="393" selection-start-column="50" selection-end-line="393" selection-end-column="50" />
+          <folding>
+            <element signature="n#gmap-map#0;n#div#1;n#template#0;n#template#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#10726#10732#0" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="371" column="39" lean-forward="false" selection-start-line="371" selection-start-column="39" selection-end-line="371" selection-end-column="39" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#header#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#header#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#18892#20403#0" expanded="false" />
+            <element signature="e#20463#21139#0" expanded="false" />
+            <element signature="e#21173#21668#0" expanded="false" />
+            <element signature="e#21699#22229#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2173">
+          <caret line="230" column="44" lean-forward="true" selection-start-line="230" selection-start-column="44" selection-end-line="230" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/404.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/tai-khoan/index/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="146" column="21" lean-forward="true" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="107" column="77" lean-forward="false" selection-start-line="107" selection-start-column="77" selection-end-line="107" selection-end-column="77" />
           <folding />
         </state>
       </provider>

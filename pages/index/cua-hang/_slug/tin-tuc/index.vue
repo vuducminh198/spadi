@@ -12,7 +12,7 @@
     <div class="container-fuild">
         <div>
             <template v-if="!mainData.isError">
-                <div class=" col-sm-6 col-xs-12">
+                <div class=" col-sm-6 col-xs-12" style="padding-left:0;">
                     <div v-for="item,index in mainData.data" v-if="index%2===1"
                          style="margin-bottom:20px; ">
                         <div style="background-color:white;">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-sm-6 col-xs-12">
+                <div class=" col-sm-6 col-xs-12" style="padding-left:0;">
                     <div v-for="item,index in mainData.data" v-if="index%2===0"
                          style="margin-bottom:20px;">
                         <div style="background-color:white;">
@@ -59,7 +59,7 @@
     export default {
         async asyncData({redirect}) {
             let mainData = {};
-            await  axios.get(process.env.API.Post_GetListPublic)
+            await  axios.get(process.env.API.Post_GetListPublic+'?chain=')
                 .then(res => {
                     mainData.data = res.data;
                     mainData.isError = false;
@@ -72,7 +72,7 @@
         },
         head() {
             return {
-                title: 'Tin tức - ' + this.mainData.data[0].chain.name + ' | Spadi.vn'
+                title: 'Tin tức '+ ' | Spadi.vn'
             }
         },
         data() {

@@ -9,6 +9,7 @@ import shareOn from '~/components/shareOn.vue'
 import moment from 'moment'
 import timeCountDown from '~/components/timeCountDown.vue'
 
+
 export const EB = new Vue();
 import VueFroala from 'vue-froala-wysiwyg'
 import grebtn from '~/components/buttonGreen.vue'
@@ -66,13 +67,39 @@ export default ({store, res, req, isServer}) => {
     if (!isServer)
         Vue.use(require('vue-js-modal'));
     Vue.use(VueResource);
-
+    Vue.prototype.GMAPKEY = () => {
+        return 'AIzaSyCMA6JcfyLSeW1SlC-bzFps0621KLqmNTM';
+    }
     Vue.prototype.EB = EB;
-    Vue.prototype.cf = () => {
-        return {
-            headers: {Authorization: 'Bearer ' + store.state.ClientToken}
+    Vue.prototype.CreateSlug = (value) => {
+        if (typeof value === 'undefined') {
+            return ''
         }
-    };
+        value = value
+            .toString()
+            .toLowerCase()
+        value = value.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, 'a')
+        value = value.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, 'e')
+        value = value.replace(/ì|í|ị|ỉ|ĩ/g, 'i')
+        value = value.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, 'o')
+        value = value.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, 'u')
+        value = value.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, 'y')
+        value = value.replace(/đ/g, 'd')
+        return value
+    }
+    Vue.prototype.finalPrice = (obj) => {
+        if (obj.type === 'percent') {
+            let currentPrice = parseInt(obj.price);
+            let currentSale = (currentPrice / 100) * parseInt(obj.value);
+            return currentPrice - currentSale;
+        }
+        else return parseInt(obj.price) - parseInt(obj.value);
+    },
+        Vue.prototype.cf = () => {
+            return {
+                headers: {Authorization: 'Bearer ' + store.state.ClientToken}
+            }
+        };
     Vue.prototype.cfA = () => {
         return {
             headers: {Authorization: `Bearer ${store.state.AdminToken}`}
@@ -98,6 +125,14 @@ export default ({store, res, req, isServer}) => {
     Vue.prototype.sortText = (input, length = 30) => {
         if (input.length <= length) return input;
         else return input.substring(0, length - 1) + '...';
+    }
+    Vue.prototype.finalPrice = (value) => {
+        let price = value.price;
+        let sub = value.value;
+        if (value.type === "percent") {
+            sub = price / sub;
+        }
+        return price - sub;
     }
     Vue.prototype.currentChain = () => {
         return store.state.adminSelectedChain;

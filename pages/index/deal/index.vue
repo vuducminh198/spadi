@@ -1,21 +1,20 @@
 <template>
     <div class="container" style="margin-top:20px;">
-        <div class="col-sm-4" >
+        <div class="col-sm-4">
             <div style="background-color:white; padding: 26px;">
-                <h6 class="headText">Danh mục</h6>
+                <el-input clearable placeholder="Nhập Deal cần tìm!" v-model="v.keyword"></el-input>
+                <h6 class="headText" style="margin-top:20px;">Danh mục</h6>
                 <ul v-if="!mainData.isErrorGetCategory"
                     style="margin:0; padding:0; list-style-type: none; margin-top:30px;">
-                    <li v-for="item in mainData.listCategory" style="font-family: 'Open Sans'; font-size:15px;">
+                    <li v-for="item in mainData.listCategory" style="font-family: 'Open Sans'; font-size:14px;">
                         <el-checkbox></el-checkbox>
                         {{item.name}}
                     </li>
                 </ul>
-            </div>
-            <div style="background-color:white; padding: 26px; margin-top:30px;">
-                <h6 class="headText">Tỉnh thành</h6>
+                <h6 class="headText" style="margin-top:20px;">Tỉnh thành</h6>
                 <ul v-if="!mainData.isErrorGetCity"
                     style="margin:0; padding:0; list-style-type: none; margin-top:20px;">
-                    <li style="font-family: 'Open Sans'; font-size:15px;" v-for="item,index in mainData.listCity"
+                    <li style="font-family: 'Open Sans'; font-size:14px;" v-for="item,index in mainData.listCity"
                         v-show="index<5 || index>=5 && v.showMoreListCity">
                         <el-checkbox></el-checkbox>
                         {{item.name}}
@@ -28,32 +27,53 @@
                 </ul>
 
             </div>
-            <div style="background-color:white; padding: 26px; margin-top:30px;">
-                <h6 class="headText">Trạng thái</h6>
-                <ul style="margin:0; padding:0; list-style-type: none; margin-top:20px; font-family: 'Open Sans'; font-size:15px;">
-                    <li>
-                        <el-checkbox></el-checkbox>
-                        Có coupon
-                    </li>
-                    <li>
-                        <el-checkbox></el-checkbox>
-                        Có giảm giá
-                    </li>
-                    <li>
-                        <el-checkbox></el-checkbox>
-                        Sản phẩm mới
-                    </li>
-                </ul>
-            </div>
+
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-8 mgr-o" style="padding:0;">
+            <p v-if="v.keyword.trim().length>0">Hiển thị kết quả cho từ khóa: {{v.keyword}}</p>
             <template v-if="!mainData.isErrorDeal">
-            <div v-for="item in mainData.listDeal" class="col-sm-6" style="margin-bottom:20px;">
-                <div style="background-color:white;">
+                <div class="col-md-4 col-sm-6 col-xs-6 "
+                     style="padding-left:0; padding-right:7.5px; margin-bottom:15px;"
+                     v-for="item,index in c_listDeal">
+                    <div style=" border-top:0px; text-overflow: ellipsis; border-radius: 0; background-color:white">
+                        <div :style="`width:100%; height:140px; background-size:cover; background-image:url(${img_base+item.images[0]}); position:relative`">
+                        </div>
+                        <div style="padding:10px;">
+                            <div style="font-family: 'Open Sans';   overflow:hidden; text-overflow:ellipsis; max-height:44px; height:44px;"
+                                 class="mxLinkClass" @click="$router.push(`/deal/${item.slug}`)">
+                                {{sortText(item.title,38)}}
+                            </div>
+                            <br>
+                            <span>
+                    <span style="color:#ff5722;     flex-flow: row nowrap;  align-items: baseline; font-size: 30px; font-size: 2rem;font-weight: 700; font-family: 'Open Sans'">{{ finalPrice(item)| VN}}</span>&nbsp;
+                                <strike>
+                    <span style="font-family: 'Open Sans'; ">{{item.price| VN}}</span></strike></span>
 
+
+                            <table class="table" style="padding:0; margin:0;">
+                                <tbody style="margin:0;padding:0;">
+                                <tr style="margin:0; padding:0">
+                                    <td style="border:0; margin:0; padding:0">
+                                        <div class="pull-left rateStar">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span><br/>
+                                            <span style="font-size:10px; font-family: 'Open Sans'">  (1502 đánh giá)</span>
+                                        </div>
+                                    </td>
+                                    <td style="border:0;  width: 42px; margin:0; padding:0; text-align: center;">
+                                        <button class="buttonAddCart" @click="EB.$emit('updateCart', item._id)">
+                                            <span class="el-icon-goods"></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
             </template>
 
         </div>
@@ -93,7 +113,21 @@
         data() {
             return {
                 v: {
-                    showMoreListCity: false
+                    showMoreListCity: false,
+                    keyword:'',
+                }
+            }
+        },
+        computed: {
+            c_listDeal(){
+                let keyword = this.CreateSlug(this.v.keyword.trim());
+                if (keyword.length===0) return this.mainData.listDeal;
+                else {
+                    let resData = [];
+                    this.mainData.listDeal.forEach(e=>{
+                        if (this.CreateSlug(e.title).indexOf(keyword)!==-1) resData.push(e);
+                    })
+                    return resData;
                 }
             }
         }
@@ -131,31 +165,64 @@
         width: 80px;
         height: 80px;
         background-size: cover;
-        margin:20px;
+        margin: 20px;
         position: absolute;
     }
-    .shopSmallName{
-        color:white;
+
+    .shopSmallName {
+        color: white;
         font-family: "Open Sans";
-        margin-left:20px;
-        margin-top:110px;
-        font-size:24px;
+        margin-left: 20px;
+        margin-top: 110px;
+        font-size: 24px;
         position: absolute;
     }
+
+    .buttonAddCart {
+        width: 40px;
+        height: 40px;
+        border: 0;
+        background-color: rgba(45, 45, 48, .1);
+        border-radius: 50vh;
+    }
+
+    .buttonAddCart:hover {
+        background-color: #439A46;
+    }
+
+    .buttonAddCart:hover span {
+        color: white;
+    }
+
+    .buttonAddCart span {
+        font-size: 24px;
+    }
+
     .rateStar .fa-star {
         color: #FCEB12;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .buttonFlat {
         color: rgba(45, 45, 48, .4);
         cursor: pointer;
         text-align: center;
-        font-size:18px;
+        font-size: 18px;
     }
 
     .buttonFlat:hover {
 
         color: rgba(45, 45, 48, 1);
+    }
+
+    @media (max-width: 768px) {
+        .mgr-o {
+            margin-top: 20px;
+            padding: 0;
+        }
+    }
+    .mxLinkClass:hover{
+        text-decoration: underline;
+        cursor: pointer;
     }
 </style>

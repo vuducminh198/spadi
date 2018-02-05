@@ -2,10 +2,10 @@
     button {
         border: 0;
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         padding: 8px 16px;
         outline: none;
-        background-color: #4CAF50;
+        background-color: #419645;
         min-width: 86px;
         transition: all .6s ease-in-out;
         width: 100%;
@@ -14,7 +14,7 @@
     }
 
     button:hover {
-        opacity: .8;
+        background-color: #4CAF50;
     }
 
     .icon-e {
@@ -94,25 +94,8 @@
 </style>
 <template>
     <button :type="type" :disabled="loading" @click="m_emitParent">
-        <table class="" style="margin-bottom:0; position: absolute" :style="!loading?'visibility: hidden':''">
-            <tbody>
-            <tr>
-                <td style=""></td>
-                <td style="height:22px; text-align: center; vertical-align: middle">
-                    <div class="icon-e e1"></div>
-                </td>
-                <td style="height:22px; text-align: center; vertical-align: middle">
-                    <div class="icon-e e2"></div>
+        <span >
 
-                <td style="height:22px; text-align: center; vertical-align: middle">
-                    <div class="icon-e e3"></div>
-                </td>
-                <td style=""></td>
-            </tr>
-            </tbody>
-        </table>
-        <span :style="loading?'visibility: hidden':''">
-            <span v-if="" class="iconClass" style="font-size:24px; margin-right:10px;"></span>
             {{title}}</span>
         <div class="rightIp"></div>
     </button>

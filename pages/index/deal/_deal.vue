@@ -1,19 +1,24 @@
 <template>
     <div class="container" style="margin-top:20px;">
+
         <div style="padding:20px;" class="box" v-if="typeof comment.length>0">
             <span><span class="material-icons">face</span>Opps! Coupon không tồn tại</span>
         </div>
         <div v-else-if="typeof mainData!=='undefined'">
             <div class="row">
+                <div style="font-size:36px; padding: 20px; font-family: 'Open Sans'">{{mainData.title}}</div>
                 <div class="col-sm-8">
                     <div class="box" style="border:0; box-shadow: unset;border-radius: 0;">
-                        <el-carousel :interval="5000" arrow="always">
+
+                        <el-carousel :interval="5000" height="500px" arrow="always">
                             <el-carousel-item v-for="item in mainData.images" :key="item">
-                                <div class="imgCaro" :style="`background-image:url(${img_base+item})`"></div>
+                                <img :src="img_base+item" style="width:100%;">
+                                <!--<div class="imgCaro" :style="`background-image:url(${img_base+item})`"></div>-->
                             </el-carousel-item>
                         </el-carousel>
+
                         <div style="padding:20px; border-radius: 0">
-                            <span style="font-size:24px;">{{mainData.title}}</span>
+                            <span style="font-size:36px; font-family: 'Open Sans'">{{mainData.title}}</span>
                             <hr style="border-style:dot-dot-dash">
                             <div class="row">
                                 <div class="col-sm-3">
@@ -28,13 +33,6 @@
                             </div>
 
 
-                            <label class="lb_head">Hình ảnh</label>
-                            <div style="height:100px; overflow: hidden">
-                                <div v-for="item in mainData.images"
-                                     @click="v.imageSource = `${img_base+item}`; v.dialogImageViewer = true"
-                                     :style="`background-image:url(${img_base+item}); `"
-                                     class="imageClass"></div>
-                            </div>
                         </div>
                     </div>
                     <div style="clear:both">
@@ -42,7 +40,7 @@
                     </div>
                     <div class="box" style="border:0; box-shadow: unset;border-radius: 0;">
 
-                        <label class="lb_head" style="margin:20px;">ĐỊA ĐIỂM SỬ DỤNG</label>
+                        <label class="lb_head" style="margin:20px;">SẢN PHẨM CÓ TẠI</label>
                         <div style="clear: both"></div>
                         <div style="min-height:300px; position: relative">
                             <gmap-map style="width: 100%; height: 100%; position: absolute; left:0; top:0"
@@ -56,9 +54,9 @@
                                         description="aaaaaaaaaaaaaaa"
                                         v-for="(m, index) in mainData.shop"
                                         :icon="{url: '/img/market.png',
-                                               scaledSize: { width:46, height:50},
-                                               stylers:[{ 'border-radius': 50}]
-                                         }"
+        scaledSize: { width:46, height:50},
+        stylers:[{ 'border-radius': 50}]
+        }"
 
                                         :position="{lat: m.latitude, lng: m.longitude }"
                                         :clickable="true"
@@ -78,23 +76,12 @@
                                             </tr>
                                             </tbody>
                                         </table>
-
-
-
                                     </gmap-info-window>
                                 </gmap-marker>
                             </gmap-map>
                         </div>
                     </div>
-                    <div class="box" style="border:0; box-shadow: unset;border-radius: 0; padding:20px;">
 
-                        <label class="lb_head">Danh mục</label>
-                        <ul>
-                            <li v-for="item in mainData.serviceItem">
-                                {{item.name}}
-                            </li>
-                        </ul>
-                    </div>
                     <div style="clear: both"></div>
                     <div>
                         <div class="cusTab">
@@ -162,9 +149,35 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-
                     <div class="box" style="padding:30px; border-top:0px;">
-                        <btnCode title="LẤY COUPON" :loading="v.isLoading" @click="m_showCode()"></btnCode>
+                        <span style="font-family: 'Open Sans'; font-size:13px;">Giới hạn số lượng!</span><br>
+                        <span><span
+                                style="color:#ff5722;     flex-flow: row nowrap;  align-items: baseline; font-size: 32px; font-size: 2rem;font-weight: 700; font-family: 'Open Sans'">{{finalPrice | VN}}</span>&nbsp; <strike><span
+                                style="font-family: 'Open Sans'; font-style: ">{{mainData.price | VN}}</span></strike></span>
+                        <grebtn style="padding:10px; margin-top:20px;" :icon="true" title="THÊM VÀO GIỎ"
+                                :loading="v.isLoading"
+                                @click="m_AddToCard()"></grebtn>
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td style="width:33.33%;">
+                                    <span style="font-family: 'Open Sans'; font-size:13px; color:rgba(45,45,48,.6)">Giá gốc</span><br>
+                                    <span class="bold">{{mainData.price | VN}}</span>
+                                </td>
+                                <td style="width:33.33%; text-align: center">
+                                    <span style="font-family: 'Open Sans'; font-size:13px; color:rgba(45,45,48,.6)">Giảm</span><br>
+                                    <span class="bold" v-if="mainData.type==='percent'">{{mainData.value}}%</span>
+                                    <span class="bold" v-else>{{mainData.value | VN}}</span>
+                                </td>
+                                <td style="width:33.33%; text-align: right">
+                                    <span style="font-family: 'Open Sans'; font-size:13px; color:rgba(45,45,48,.6)">Tiết kiệm</span><br>
+                                    <span class="bold">{{finalSave | VN}}</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                        <span style="font-family: 'Open Sans'; font-size:24px;">{{mainData.title}}</span>
                         <share-on></share-on>
                     </div>
                 </div>
@@ -199,17 +212,17 @@
                                             class="material-icons mxCopy" style="padding-top:10px;"
                                             v-clipboard:copy="v.code"
                                             v-clipboard:success="()=>{
-                                                                                                                                     this.$message({
-                                                                                                                                        type:'success',
-                                                                                                                                        message:'Đã sao chép mã vào bộ nhớ đệm!'
-                                                                                                                                     })
-                                                                                                                                 }"
+        this.$message({
+        type:'success',
+        message:'Đã sao chép mã vào bộ nhớ đệm!'
+        })
+        }"
                                             v-clipboard:error="()=>{
-                                                                                                                                       this.$message({
-                                                                                                                                        type:'error',
-                                                                                                                                        message:'Đã xảy ra sự cố, không thể sao chép!'
-                                                                                                                                     })
-                                                                                                                                 }"
+        this.$message({
+        type:'error',
+        message:'Đã xảy ra sự cố, không thể sao chép!'
+        })
+        }"
                                     >content_copy</span></td>
                                 </tr>
                                 </tbody>
@@ -222,7 +235,7 @@
                                     class="fa fa-clock-o"></span> Còn <time-count-down
                                     :to="mainData.to"
                                     style="  font-size:18px;"></time-count-down>
-                       </span>
+        </span>
                         </template>
                     </div>
                 </div>
@@ -230,7 +243,6 @@
             </div>
         </el-dialog>
         <el-dialog :visible.sync="v.dialogShowAlert">
-
         </el-dialog>
     </div>
 </template>
@@ -241,7 +253,7 @@
         scrollToTop: true,
         head() {
             return {
-                title: this.mainData.title,
+                title: this.mainData.title + ' | Spadi.vn',
                 meta: [
                     {name: 'description', content: this.mainData.description},
                     {name: 'og:locale', content: 'vi_VN'},
@@ -259,18 +271,31 @@
 
             }
         },
-        async asyncData({app, query, route, req, store}) {
-            if (typeof query.s !== 'undefined') {
-                let CouponData = await app.$axios.$get(process.env.API.Coupon_PublicGetDetail + query.s);
+        async asyncData({app, query, route, req, store, params, redirect}) {
+            if (typeof params.deal !== 'undefined') {
+                let DealData = {};
+                await app.$axios.$get(process.env.API.Deal_PublicGetDetailByData + params.deal)
+                    .then(res => {
+                        DealData = res;
+                        DealData.isError = false;
+                    })
+                    .catch(error => {
+                        DealData.isError = true;
+                        redirect('/deal/404');
+                    })
                 return {
-                    mainData: CouponData,
+                    mainData: DealData,
                     comment: '',
                     currentURLPath: '123123',
                     ClientInfo: store.state.ClientInfo
                 }
             }
             else {
-                return {comment: 'Coupon không tồn tại.'}
+                redirect('/deal/404');
+                return {
+                    comment: 'Coupon không tồn tại.',
+                    mainData: {}
+                }
             }
         },
         data() {
@@ -301,47 +326,39 @@
                 }
             }
         },
+        computed: {
+            finalPrice() {
+                if (this.mainData.type === 'percent') {
+                    let currentPrice = parseInt(this.mainData.price);
+                    let currentSale = (currentPrice / 100) * parseInt(this.mainData.value);
+                    return currentPrice - currentSale;
+                }
+                else return parseInt(this.mainData.price) - parseInt(this.mainData.value);
+            },
+            finalSave() {
+                let currentPrice = parseInt(this.mainData.price);
+                return (currentPrice / 100) * parseInt(this.mainData.value);
+            }
+        },
         beforeMount() {
             this.v.currentHref = window.location.href;
-            this.m_getListMessageOfCoupon();
+            // this.m_getListMessageOfCoupon();
+
         },
         methods: {
             m_showShopInfo(m) {
-       
-            },
-            m_showCode() {
-                if (this.$store.state.ClientInfo.role === 'user' && this.$store.state.ClientToken.toString().length > 10) this.m_finalShowCode();
-                else this.v.dialogGetInfoUser = true;
-            },
-            m_finalShowCode() {
-                let postData = {};
-                let headers = {
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                }
-                if (this.$store.state.ClientToken.toString().length > 10) {
-                    headers.headers.Authorization = `Bearer ${this.$store.state.ClientToken}`;
-                    this.form.defaultUser.name = this.$store.state.ClientInfo.name;
-                }
-                else postData = this.form.defaultUser;
-                postData._id = this.mainData._id;
-                this.v.isLoading = true;
-                this.$http.post(process.env.API.Coupon_GetCode, postData, headers)
-                    .then(data => {
 
-                        this.v.isLoading = false;
-                        this.v.code = data.body.code || data.body.Message;
-                        if (typeof  data.body.Message !== 'undefined') this.v.OverCode = true;
-                        else this.v.OverCode = false;
-                        this.v.dialogShowCounpon = true;
-                    })
-                    .catch(error => {
-                        this.v.isLoading = false;
-                    })
             },
+            m_AddToCard() {
+                this.v.isLoading = true;
+                this.EB.$emit('updateCart', this.mainData._id);
+                setTimeout(() => {
+                    this.v.isLoading = false
+                }, 200);
+            },
+
             m_getListMessageOfCoupon() {
-                this.$http.get(process.env.API.Coupon_PublicGetCommentByData + this.mainData._id)
+                this.$http.get(process.env.API.Deal_PublicGetCommentByData + this.mainData._id)
                     .then(data => {
                         this.v.listComment = data.body;
                     })
@@ -362,7 +379,7 @@
                 if (this.$store.state.ClientInfo.role === 'user' && this.$store.state.ClientToken.toString().length > 0)
                     header.headers.Authorization = `Bearer ${this.$store.state.ClientToken}`;
                 this.v.isSending = false;
-                this.$http.post(process.env.API.Coupon_Comment, postData, header)
+                this.$http.post(process.env.API.Deal_Comment, postData, header)
                     .then(data => {
                         this.form.postMessage.message = '';
                         this.m_getListMessageOfCoupon();
