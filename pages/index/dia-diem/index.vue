@@ -212,7 +212,6 @@
                             >
                                 <gmap-marker
                                         :position="v.currentLocation"
-                                        :clickable="true"
                                         :draggable="true"
                                         @dragend="m_dragEndMaker"
                                 ></gmap-marker>
@@ -331,7 +330,7 @@
                 v: {
                     typeSelect: 'B',
                     Distance: 100,
-                    currentLocation: {},
+                    currentLocation: this.$store.state.currentLocation,
                     zoomlevel: 10,
                     selectedCity: '',
                     selectedDistrict: '',
@@ -380,7 +379,7 @@
             }
         },
         beforeMount() {
-            this.v.currentLocation = this.$store.state.currentLocation;
+            this.v.currentLocation =   JSON.parse(JSON.stringify( this.$store.state.currentLocation));
             this.m_getListCity();
         },
         methods: {

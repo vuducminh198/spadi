@@ -308,6 +308,8 @@
 <script>
     import Logo from '~/components/Logo.vue'
     import $ from 'jquery'
+    import Cookies from 'js-cookie'
+    import Cookie from 'cookie'
     import jwt from 'json-web-token'
 
     export default {
@@ -368,7 +370,31 @@
             })
             this.m_getAndUpdateCartNumber();
         },
+        mounted() {
+            this.m_windowInit();
+        },
         methods: {
+            m_windowInit() {
+                if (this.m_checkF(this.getCookie('AdminToken'))) this.$store.commit('updateAdminToken', this.getCookie('AdminToken'));
+                if (this.m_checkF(this.getCookie('ClientToken'))) this.$store.commit('updateClientToken', this.getCookie('ClientToken'));
+                if (this.m_checkF(this.getCookie('AdminInfo'))) {
+                    jwt.decode(process.env.jwt_KEY, this.getCookie('AdminInfo'), async (jwrError, jwtData) => {
+                        if (!jwrError) await this.$store.commit('updateAdminInfo', jwtData);
+                    });
+                }
+                if (this.m_checkF(this.getCookie('ClientInfo'))) {
+                    jwt.decode(process.env.jwt_KEY, this.getCookie('ClientInfo'), async (jwrError, jwtData) => {
+                        if (!jwrError) await this.$store.commit('updateClientInfo', jwtData);
+                    });
+                }
+                if (this.m_checkF(this.getCookie('AdminRole'))) this.$store.commit('updateAdminRole', this.getCookie('AdminRole'));
+                if (this.m_checkF(this.getCookie('ClientRole'))) this.$store.commit('updateClientRole', this.getCookie('ClientRole'));
+                if (this.m_checkF(this.getCookie('currentLocation'))) this.$store.commit('updateCurrentLocation', JSON.parse(this.getCookie('currentLocation')));
+            },
+            m_checkF(object) {
+                if (typeof object !== 'undefined' && object !== 'undefined' && object !== '') return true;
+                return false;
+            },
             m_getAndUpdateCartNumber() {
                 let cartData = this.getCookie('userCart');
                 if (typeof cartData === 'undefined') this.$store.commit('updateClientCartNumber', 0);
@@ -382,20 +408,6 @@
                             this.$store.commit('updateClientCartNumber', mCount);
                         }
                     })
-                }
-            },
-            m_toggleMenuRight() {
-                if (this.v.menuRightIsShow) {
-                    $('.mxTabRight').css('margin-right', '280px');
-                    setTimeout(() => {
-                        this.v.menuRightIsShow = false
-                    }, 600)
-                }
-                else {
-                    $('.mxTabRight').css('margin-right', '0px');
-                    setTimeout(() => {
-                        this.v.menuRightIsShow = true
-                    }, 600)
                 }
             },
             m_ClientLogout() {
@@ -419,155 +431,6 @@
         }
     }
 </script>
-<style>
+<style scoped>
 
-    /* Note: Try to remove the following lines to see the effect of CSS positioning */
-    .affix {
-        top: 0;
-        width: 100%;
-        z-index: 11 !important;
-    }
-
-    .affix + .container-fluid {
-        padding-top: 70px;
-    }
-
-    .mxTabRight {
-        margin-top: 40px;
-        display: none;
-        position: fixed;
-        right: -280px;
-        top: 0;
-        font-family: 'Open Sans' !important;
-        transition: all .6s ease-in-out;
-        border-radius: 4px;
-    }
-
-    .mxTabRight button {
-        float: left;
-        margin-top: 40px;
-        border: 0;
-        background-color: #FF5151;
-        outline: none;
-        padding: 12px;
-        padding-top: 16px;
-        border-radius: 2px 0px 0px 2px;
-    }
-
-    .mxTabRight button:hover {
-        background-color: #FF8080;
-    }
-
-    .mxTabRight button span {
-        font-size: 18px;
-        color: white;
-    }
-
-    .mxTabRight .container-in {
-        float: left;
-        background-color: white;
-        border: .5px solid rgba(45, 45, 48, .1);
-        border-right: 0;
-        width: 280px;
-        padding: 15px;
-        padding-top: 20px;
-        height: calc(100vh - 80px);
-        border-radius: 2px 0px 0px 2px;
-        overflow-y: scroll;
-    }
-
-    .container-in span.material-icons {
-        color: rgba(45, 45, 48, .6);
-    }
-
-    .container-in a {
-        font-size: 14px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .container-in .headx {
-        font-size: 18px;
-        clear: both;
-        padding-top: 60px;
-        font-weight: bold;
-        color: rgba(45, 45, 48, .8);
-    }
-
-    .container-in .ul_right {
-        list-style-type: none;
-        margin-left: 25px;
-        padding-left: 0;
-    }
-
-    .container-in .ul_right li {
-        margin-top: 10px;
-        font-size: 14px;
-        font-weight: bold;
-        color: rgba(45, 45, 48, .8);
-    }
-
-    .mxNav {
-        background-color: white;
-        border: 0;
-        border-top: .5px solid rgba(45, 45, 48, .1);
-        border-bottom: .5px solid rgba(45, 45, 48, .1);
-        border-radius: 0;
-    }
-
-    @media (max-width: 768px) {
-        .container-in .ul_right li {
-            font-family: 18px;
-        }
-
-        .mxNav {
-            display: none;
-        }
-
-        .mxTabRight {
-            display: block;
-        }
-    }
-
-    a {
-        font-size: 15px;
-    }
-
-    #myNavbar ul li a {
-        color: black;
-        font-family: 'Open Sans';
-        font-size: 14px;
-    }
-
-    .ClientSubMenu {
-        position: absolute;
-        background-color: white;
-        box-shadow: 0px 2px 3px rgba(45, 45, 48, .2);
-        list-style-type: none;
-        margin-left: 0px;
-        padding-left: 0px;
-        display: none;
-        z-index: 13px;
-        z-index: 13;
-        width: 220px;
-    }
-
-    .ClientSubMenu li {
-        text-align: left;
-        padding: 6px 10px 6px 10px;
-        cursor: pointer;
-    }
-
-    .ClientSubMenu li:hover {
-        background-color: rgba(45, 45, 48, .1);
-    }
-
-    .ClientSubMenu span {
-        padding-right: 8px;
-        font-size: 20px;
-    }
-
-    .liMenuClient:hover .ClientSubMenu {
-        display: block;
-    }
 </style>

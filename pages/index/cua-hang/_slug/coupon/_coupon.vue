@@ -257,7 +257,7 @@
 
             }
         },
-        async asyncData({app, query, route, req, store, redirect, params}) {
+        async asyncData({app, query, route, store, redirect, params}) {
             let mainData = {}
             if (typeof params.coupon !== 'undefined') {
                 await app.$axios.$get(process.env.API.Coupon_PublicGetDetail + params.coupon)

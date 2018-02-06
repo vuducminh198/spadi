@@ -271,7 +271,7 @@
 
             }
         },
-        async asyncData({app, query, route, req, store, params, redirect}) {
+        async asyncData({app, query, route, store, params, redirect}) {
             if (typeof params.deal !== 'undefined') {
                 let DealData = {};
                 await app.$axios.$get(process.env.API.Deal_PublicGetDetailByData + params.deal)

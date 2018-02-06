@@ -2,20 +2,22 @@ import Vue from 'vue'
 import VueResource from 'vue-resource'
 import Cookies from 'js-cookie'
 import Cookie from 'cookie'
+
 import * as VueGoogleMaps from '~/node_modules/vue2-google-maps/src/main';
 import VueClipboard from 'vue-clipboard2'
+import VueCookie from 'vue-cookies'
+
 import hintPickChain from '~/components/hintPickChain.vue'
 import shareOn from '~/components/shareOn.vue'
 import moment from 'moment'
 import timeCountDown from '~/components/timeCountDown.vue'
-
-
-export const EB = new Vue();
 import VueFroala from 'vue-froala-wysiwyg'
 import grebtn from '~/components/buttonGreen.vue'
 import btnGetCode from '~/components/getCode.vue'
 
-export default ({store, res, req, isServer}) => {
+export const EB = new Vue();
+
+export default ({store,  isServer}) => {
 
     Vue.filter('fullTime', function (value) {
         if (!value) return ''
@@ -55,13 +57,14 @@ export default ({store, res, req, isServer}) => {
     Vue.component('btnCode', btnGetCode);
     Vue.component('shareOn', shareOn);
 
+    //---------------------------------
     Vue.use(VueGoogleMaps, {
         load: {
             key: 'AIzaSyDaQphUDH1sEa2vEGxZmnF77G089b-Iql8',
             libraries: 'places'
         }
     })
-
+    Vue.use(VueCookie);
     Vue.use(VueFroala);
     Vue.use(VueClipboard);
     if (!isServer)
@@ -157,13 +160,12 @@ export default ({store, res, req, isServer}) => {
         });
     }
 
+
     Vue.prototype.getCookie = (name) => {
-        const cookieStr = document.cookie;
-        const cookies = Cookie.parse(cookieStr || '') || {};
-        return cookies[name];
+        return window.localStorage.getItem(name);
     }
     Vue.prototype.setCookie = (name, value) => {
-        document.cookie = `${name}=${value};path=/`
+        window.localStorage.setItem(name,value);
     }
     if (process.browser) {
         function onPositionReceived(position) {

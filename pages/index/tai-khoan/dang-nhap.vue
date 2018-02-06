@@ -80,7 +80,7 @@
                             this.setCookie('ClientToken', crData.token);
                             jwt.encode(process.env.jwt_KEY, clientInfo, async (jwtError, jwtData) => {
                                 if (!jwtError) {
-                                    await this.setCookie('ClientInfo', jwtData);
+                                    this.setCookie('ClientInfo', jwtData);
                                     await this.$store.commit('updateClientToken', crData.token);
                                     await this.$store.commit('updateClientInfo', clientInfo);
                                     await this.$store.commit('updateClientRole', crData.role);
@@ -92,7 +92,7 @@
                     })
                     .catch(error => {
                         this.v.isLoading = false;
-          
+
                         this.$message({
                             type: 'error',
                             message: (typeof error.body !== 'undefined' && typeof error.body.ErrorMessage !== 'undefined' ? error.body.ErrorMessage : 'Đã xảy ra sự cố, vui lòng kiểm tra và thử lại sau')

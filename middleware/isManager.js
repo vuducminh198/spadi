@@ -2,8 +2,8 @@ import Cookies from 'js-cookie'
 import Cookie from 'cookie'
 import jwt from 'json-web-token'
 
-export default async ({res, req, redirect, store}) => {
-    const cookieStr = !process.server ? document.cookie : req.headers.cookie;
+export default async ({redirect, store}) => {
+    const cookieStr = !process.server ? document.cookie : '';
     const cookies = Cookie.parse(cookieStr || '') || {};
     if (typeof  cookies !== 'undefined' && (cookies.role !== 'manager' || cookies.role !== 'user'))
         if (typeof cookies.token === 'undefined' || cookies.token.length < 10) {

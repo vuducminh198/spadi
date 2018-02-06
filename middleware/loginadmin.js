@@ -2,7 +2,7 @@ import Cookies from 'js-cookie'
 import Cookie from 'cookie'
 import jwt from 'json-web-token'
 
-export default async ({res, req, redirect, store}) => {
+export default async ({redirect, store}) => {
     const cookieStr = !process.server ? document.cookie : req.headers.cookie;
     const cookies = Cookie.parse(cookieStr || '') || {};
     if (typeof  cookies !== 'undefined')

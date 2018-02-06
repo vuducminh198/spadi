@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie'
 import Cookie from 'cookie'
 
-export default ({res, req, redirect, store, isServer}) => {
+export default ({redirect, store, isServer}) => {
     const cookieStr = !process.server ? document.cookie : req.headers.cookie;
     const cookies = Cookie.parse(cookieStr || '') || {};
     if (typeof  cookies.token !== 'undefined' && cookies.token.length > 10) {

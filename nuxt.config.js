@@ -2,10 +2,20 @@ const webpack = require('webpack');
 const BASE = 'http://192.168.31.199:8000'
 const BASE_URL = `${BASE}/api`;
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+    router: {
+        base: '/spadi/',
+        linkActiveClass: 'active',
+    }
+} : {}
 
 module.exports = {
-    router: {
-        base: '/spadishop/'
+    transition: {
+        name: 'page',
+        mode: 'out-in',
+        beforeEnter(el) {
+
+        }
     },
     env: {
         PORT: 9999,
@@ -75,16 +85,7 @@ module.exports = {
     /*
     ** Headers of the page
     */
-    router: {
-        linkActiveClass: 'active',
-        extendRoutes(routes, resolve) {
-            routes.push({
-                name: 'custom',
-                path: '/quan-tri',
-                component: resolve(__dirname, 'pages/quan-tri/index.vue')
-            })
-        }
-    },
+    ...routerBase,
     css: [
         '@/assets/css/main.css',
         '@/assets/js/plugins/pace/pace.min.css',
@@ -139,6 +140,7 @@ module.exports = {
                 {src: 'https://cdn.quilljs.com/1.3.4/quill.js'},
                 {src: 'https://apis.google.com/js/platform.js'},
                 {type: 'javascript', src: '/js/custom.js'},
+
 
             ],
         }

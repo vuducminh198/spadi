@@ -1,7 +1,7 @@
 <template>
     <div>
-        <section class="home-search"
-                 style="background-image: url(http://spadi.vn/wp-content/uploads/2017/10/background.jpg)">
+        <div class="home-search"
+             style="background-image: url(http://spadi.vn/wp-content/uploads/2017/10/background.jpg)">
             <div class="container text-center">
                 <form class="home-search-form" action="http://spadi.vn/search-page/" autocomplete="off">
                     <p>Monday</p>
@@ -14,8 +14,8 @@
                     <a href="javascript:;" class="submit-form btn" @click="m_filter">Tìm kiếm</a>
                 </form>
             </div>
-        </section>
-        <section class="home-page-body ">
+        </div>
+        <div class="home-page-body ">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -398,24 +398,24 @@
                     <p>&nbsp;</p>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 </template>
 <script>
     export default {
         scrollToTop: true,
-        head:{
-            title:'Trang chủ - Spadi.vn'
+        head: {
+            title: 'Trang chủ - Spadi.vn'
         },
-        data(){
+        data() {
             return {
-                v:{
-                    keyword:'',
+                v: {
+                    keyword: '',
                 }
             }
         },
-        methods:{
-            m_filter(){
+        methods: {
+            m_filter() {
 
             }
         }

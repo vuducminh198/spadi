@@ -158,6 +158,155 @@
     padding: 0;
 }
 
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 11 !important;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+.mxTabRight {
+    margin-top: 40px;
+    display: none;
+    position: fixed;
+    right: -280px;
+    top: 0;
+    font-family: 'Open Sans' !important;
+    transition: all .6s ease-in-out;
+    border-radius: 4px;
+}
+
+.mxTabRight button {
+    float: left;
+    margin-top: 40px;
+    border: 0;
+    background-color: #FF5151;
+    outline: none;
+    padding: 12px;
+    padding-top: 16px;
+    border-radius: 2px 0px 0px 2px;
+}
+
+.mxTabRight button:hover {
+    background-color: #FF8080;
+}
+
+.mxTabRight button span {
+    font-size: 18px;
+    color: white;
+}
+
+.mxTabRight .container-in {
+    float: left;
+    background-color: white;
+    border: .5px solid rgba(45, 45, 48, .1);
+    border-right: 0;
+    width: 280px;
+    padding: 15px;
+    padding-top: 20px;
+    height: calc(100vh - 80px);
+    border-radius: 2px 0px 0px 2px;
+    overflow-y: scroll;
+}
+
+.container-in span.material-icons {
+    color: rgba(45, 45, 48, .6);
+}
+
+.container-in a {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.container-in .headx {
+    font-size: 18px;
+    clear: both;
+    padding-top: 60px;
+    font-weight: bold;
+    color: rgba(45, 45, 48, .8);
+}
+
+.container-in .ul_right {
+    list-style-type: none;
+    margin-left: 25px;
+    padding-left: 0;
+}
+
+.container-in .ul_right li {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(45, 45, 48, .8);
+}
+
+.mxNav {
+    background-color: white;
+    border: 0;
+    border-top: .5px solid rgba(45, 45, 48, .1);
+    border-bottom: .5px solid rgba(45, 45, 48, .1);
+    border-radius: 0;
+}
+
+@media (max-width: 768px) {
+    .container-in .ul_right li {
+        font-family: 18px;
+    }
+
+    .mxNav {
+        display: none;
+    }
+
+    .mxTabRight {
+        display: block;
+    }
+}
+
+a {
+    font-size: 15px;
+}
+
+#myNavbar ul li a {
+    color: black;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+.ClientSubMenu {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(45, 45, 48, .2);
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    display: none;
+    z-index: 13px;
+    z-index: 13;
+    width: 220px;
+}
+
+.ClientSubMenu li {
+    text-align: left;
+    padding: 6px 10px 6px 10px;
+    cursor: pointer;
+}
+
+.ClientSubMenu li:hover {
+    background-color: rgba(45, 45, 48, .1);
+}
+
+.ClientSubMenu span {
+    padding-right: 8px;
+    font-size: 20px;
+}
+
+.liMenuClient:hover .ClientSubMenu {
+    display: block;
+}
 .cusTab ul li {
     float: left;
     background-color:white;
