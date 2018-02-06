@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa61335-83ac-47fd-8657-48e265a59e5c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/middleware/checkLoginClient.js" afterPath="$PROJECT_DIR$/middleware/checkLoginClient.js" />
-      <change beforePath="$PROJECT_DIR$/middleware/isLoginClient.js" afterPath="$PROJECT_DIR$/middleware/isLoginClient.js" />
-      <change beforePath="$PROJECT_DIR$/middleware/isManager.js" afterPath="$PROJECT_DIR$/middleware/isManager.js" />
-      <change beforePath="$PROJECT_DIR$/middleware/islogin.js" afterPath="$PROJECT_DIR$/middleware/islogin.js" />
-      <change beforePath="$PROJECT_DIR$/middleware/loginadmin.js" afterPath="$PROJECT_DIR$/middleware/loginadmin.js" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.js" afterPath="$PROJECT_DIR$/nuxt.config.js" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" afterPath="$PROJECT_DIR$/pages/index.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/coupon/_coupon.vue" afterPath="$PROJECT_DIR$/pages/index/coupon/_coupon.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/_slug/coupon/_coupon.vue" afterPath="$PROJECT_DIR$/pages/index/cua-hang/_slug/coupon/_coupon.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/_slug/deal/_deal.vue" afterPath="$PROJECT_DIR$/pages/index/cua-hang/_slug/deal/_deal.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/deal/_deal.vue" afterPath="$PROJECT_DIR$/pages/index/deal/_deal.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/dia-diem/index.vue" afterPath="$PROJECT_DIR$/pages/index/dia-diem/index.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.vue" afterPath="$PROJECT_DIR$/pages/index/index.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/lien-he.vue" afterPath="$PROJECT_DIR$/pages/index/lien-he.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/tai-khoan/dang-nhap.vue" afterPath="$PROJECT_DIR$/pages/index/tai-khoan/dang-nhap.vue" />
-      <change beforePath="$PROJECT_DIR$/plugins/main.js" afterPath="$PROJECT_DIR$/plugins/main.js" />
-      <change beforePath="$PROJECT_DIR$/store/index.js" afterPath="$PROJECT_DIR$/store/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lien-he.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lien-he.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/index/lien-he.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
@@ -55,6 +35,16 @@
               <folding>
                 <marker date="1517901696252" expanded="true" signature="86:87" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nuxt.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nuxt.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,12 +164,12 @@
         <option value="$PROJECT_DIR$/store/index.js" />
         <option value="$PROJECT_DIR$/pages/index/tai-khoan/dang-nhap.vue" />
         <option value="$PROJECT_DIR$/plugins/main.js" />
-        <option value="$PROJECT_DIR$/nuxt.config.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/pages/index.vue" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/pages/index/dia-diem/index.vue" />
         <option value="$PROJECT_DIR$/pages/index/lien-he.vue" />
+        <option value="$PROJECT_DIR$/nuxt.config.js" />
       </list>
     </option>
   </component>
@@ -208,9 +198,9 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="151" />
-    <option name="y" value="39" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="401" />
+    <option name="y" value="8" />
     <option name="width" value="1085" />
     <option name="height" value="664" />
   </component>
@@ -409,12 +399,12 @@
       <workItem from="1517797855789" duration="23353000" />
       <workItem from="1517883570548" duration="9680000" />
       <workItem from="1517894262985" duration="816000" />
-      <workItem from="1517901098175" duration="1172000" />
+      <workItem from="1517901098175" duration="1200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="476194000" />
+    <option name="totallyTimeSpent" value="476222000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,7 +416,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="151" y="39" width="1085" height="664" extended-state="1" />
+    <frame x="401" y="8" width="1085" height="664" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22731525" sideWeight="0.4859287" order="0" side_tool="false" content_ui="combo" />
@@ -842,14 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6944">
@@ -901,6 +883,14 @@
           <folding>
             <marker date="1517901696252" expanded="true" signature="86:87" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,6 @@
 const webpack = require('webpack');
-const BASE = 'http://192.168.31.199:8000'
+//const BASE = 'http://192.168.31.199:8000';
+const BASE = 'http://spadi.com.vn';
 const BASE_URL = `${BASE}/api`;
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
