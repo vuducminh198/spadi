@@ -5,7 +5,6 @@ const BASE_URL = `${BASE}/api`;
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
     router: {
-        base: '/spadi/',
         linkActiveClass: 'active',
     }
 } : {}
