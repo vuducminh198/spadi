@@ -70,7 +70,7 @@
                                 <ul class="list-unstyled list-inline account-list">
                                     <li>
                                         <i class="pline-user"></i>
-                                        <template v-if="$store.state.ClientToken.length<10">
+                                        <template v-if="$store.state.ClientToken!==null && typeof $store.state.ClientToken!=='undefined' && $store.state.ClientToken.length<10">
                                             <a href="javascript:;" @click="$router.push('/tai-khoan/dang-nhap')">
                                                 Đăng
                                                 nhập

@@ -37,7 +37,7 @@
                         <div id="respond" class="comment-respond">
                             <form class="comment-form">
                                 <template
-                                        v-if="$store.state.ClientInfo.role!=='user' || $store.state.ClientToken.length<10">
+                                        v-if="$store.state.ClientInfo.role!=='user' || $store.state.ClientToken!==null &&  $store.state.ClientToken.length<10">
                                     <div class="input-group">
                                         <label for="author">Họ tên<span class="required">*</span></label>
                                         <input type="text" v-model="form.postMessage.name" class="form-control"
