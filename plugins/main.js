@@ -14,10 +14,12 @@ import timeCountDown from '~/components/timeCountDown.vue'
 import VueFroala from 'vue-froala-wysiwyg'
 import grebtn from '~/components/buttonGreen.vue'
 import btnGetCode from '~/components/getCode.vue'
+import comment from '~/components/comment.vue'
+
 
 export const EB = new Vue();
 
-export default ({store,  isServer}) => {
+export default ({store, res, req, isServer}) => {
 
     Vue.filter('fullTime', function (value) {
         if (!value) return ''
@@ -56,7 +58,7 @@ export default ({store,  isServer}) => {
     Vue.component('grebtn', grebtn);
     Vue.component('btnCode', btnGetCode);
     Vue.component('shareOn', shareOn);
-
+    Vue.component('c-comment',comment);
     //---------------------------------
     Vue.use(VueGoogleMaps, {
         load: {
@@ -160,13 +162,20 @@ export default ({store,  isServer}) => {
         });
     }
 
-
     Vue.prototype.getCookie = (name) => {
-        return window.localStorage.getItem(name);
+        const cookieStr = document.cookie;
+        const cookies = Cookie.parse(cookieStr || '') || {};
+        return cookies[name];
     }
     Vue.prototype.setCookie = (name, value) => {
-        window.localStorage.setItem(name,value);
+        document.cookie = `${name}=${value};path=/`
     }
+    // Vue.prototype.getCookie = (name) => {
+    //     return window.localStorage.getItem(name);
+    // }
+    // Vue.prototype.setCookie = (name, value) => {
+    //     window.localStorage.setItem(name,value);
+    // }
     if (process.browser) {
         function onPositionReceived(position) {
             EB.$emit('updateCurrentLocation', position);

@@ -371,7 +371,7 @@
             this.m_getAndUpdateCartNumber();
         },
         mounted() {
-            this.m_windowInit();
+           // this.m_windowInit();
         },
         methods: {
             m_windowInit() {

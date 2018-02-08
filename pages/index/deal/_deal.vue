@@ -123,20 +123,21 @@
                                                      style="width:50px; height:50px; border-radius: 50vh; margin:10px;">
                                             </td>
                                             <td>
-                                                <form @submit="m_postMessage($event)">
-                                                    <label class="bold" style="font-family: 'Source Sans Pro'">Bình luận
-                                                        của bạn
-                                                        ({{form.postMessage.message.toString().length}}/200) ~
-                                                        {{$store.state.ClientInfo.name}}</label>
-                                                    <el-input type="textarea"
-                                                              v-model="form.postMessage.message"></el-input>
-                                                    <div class="text-right" style="margin-top:20px;">
-                                                        <grebtn style="padding:10px; width:100px;" title="Gửi"
-                                                                :loading="v.isSending"
-                                                                type="submit"
-                                                                :icon="true" iconClass="fa fa-send"></grebtn>
-                                                    </div>
-                                                </form>
+                                                <!--<form @submit="m_postMessage($event)">-->
+                                                    <!--<label class="bold" style="font-family: 'Source Sans Pro'">Bình luận-->
+                                                        <!--của bạn-->
+                                                        <!--({{form.postMessage.message.toString().length}}/200) ~-->
+                                                        <!--{{$store.state.ClientInfo.name}}</label>-->
+                                                    <!--<el-input type="textarea"-->
+                                                              <!--v-model="form.postMessage.message"></el-input>-->
+                                                    <!--<div class="text-right" style="margin-top:20px;">-->
+                                                        <!--<grebtn style="padding:10px; width:100px;" title="Gửi"-->
+                                                                <!--:loading="v.isSending"-->
+                                                                <!--type="submit"-->
+                                                                <!--:icon="true" iconClass="fa fa-send"></grebtn>-->
+                                                    <!--</div>-->
+                                                <!--</form>-->
+                                                <c-comment typeName="deal" :url_api="c_URL"  :_id="mainData._id" @callback="m_PostMessageCallback"></c-comment>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -255,16 +256,16 @@
             return {
                 title: this.mainData.title + ' | Spadi.vn',
                 meta: [
-                    {name: 'description', content: this.mainData.description},
-                    {name: 'og:locale', content: 'vi_VN'},
-                    {name: 'og:type', content: 'article'},
-                    {name: 'og:title', content: this.mainData.title},
-                    {name: 'og:description', content: this.mainData.description},
-                    {name: 'og:url', content: this.currentURLPath},
-                    {name: 'og:site_name', content: this.mainData.title},
-                    {name: 'og:image', content: process.env.IMAGE_BASE + this.mainData.images[0]},
-                    {name: 'og:image:width', content: '650'},
-                    {name: 'og:image:height', content: '650'},
+                    {hid:'description' ,name: 'description', content: this.mainData.description},
+                    {hid:'og:locale' ,name: 'og:locale', content: 'vi_VN'},
+                    {hid:'og:type' ,name: 'og:type', content: 'article'},
+                    {hid:'og:title' ,name: 'og:title', content: this.mainData.title},
+                    {hid:'og:description' ,name: 'og:description', content: this.mainData.description},
+                    {hid:'og:url' ,name: 'og:url', content: this.currentURLPath},
+                    {hid:'og:site_name' ,name: 'og:site_name', content: this.mainData.title},
+                    {hid:'og:image' ,name: 'og:image', content: process.env.IMAGE_BASE + this.mainData.images[0]},
+                    {hid:'og:image:width' ,name: 'og:image:width', content: '650'},
+                    {hid:'og:image:height' ,name: 'og:image:height', content: '650'},
 
                 ],
 
@@ -327,6 +328,9 @@
             }
         },
         computed: {
+            c_URL(){
+                return process.env.API.Deal_Comment
+            },
             finalPrice() {
                 if (this.mainData.type === 'percent') {
                     let currentPrice = parseInt(this.mainData.price);
@@ -342,12 +346,15 @@
         },
         beforeMount() {
             this.v.currentHref = window.location.href;
-            // this.m_getListMessageOfCoupon();
+             this.m_getListMessageOfDeal();
 
         },
         methods: {
             m_showShopInfo(m) {
 
+            },
+            m_PostMessageCallback(){
+                this.m_getListMessageOfDeal();
             },
             m_AddToCard() {
                 this.v.isLoading = true;
@@ -357,7 +364,7 @@
                 }, 200);
             },
 
-            m_getListMessageOfCoupon() {
+            m_getListMessageOfDeal() {
                 this.$http.get(process.env.API.Deal_PublicGetCommentByData + this.mainData._id)
                     .then(data => {
                         this.v.listComment = data.body;
@@ -382,7 +389,7 @@
                 this.$http.post(process.env.API.Deal_Comment, postData, header)
                     .then(data => {
                         this.form.postMessage.message = '';
-                        this.m_getListMessageOfCoupon();
+                        this.m_getListMessageOfDeal();
                         this.$message({type: "success", message: 'Bình luận của bạn đã được gửi đi!'});
                     })
                     .catch(error => {

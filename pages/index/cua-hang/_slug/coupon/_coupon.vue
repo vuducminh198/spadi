@@ -136,20 +136,21 @@
                                                      style="width:50px; height:50px; border-radius: 50vh; margin:10px;">
                                             </td>
                                             <td>
-                                                <form @submit="m_postMessage($event)">
-                                                    <label class="bold" style="font-family: 'Source Sans Pro'">Bình luận
-                                                        của bạn
-                                                        ({{form.postMessage.message.toString().length}}/200) ~
-                                                        {{$store.state.ClientInfo.name}}</label>
-                                                    <el-input type="textarea"
-                                                              v-model="form.postMessage.message"></el-input>
-                                                    <div class="text-right" style="margin-top:20px;">
-                                                        <grebtn style="padding:10px; width:100px;" title="Gửi"
-                                                                :loading="v.isSending"
-                                                                type="submit"
-                                                                :icon="true" iconClass="fa fa-send"></grebtn>
-                                                    </div>
-                                                </form>
+                                                <!--<form @submit="m_postMessage($event)">-->
+                                                    <!--<label class="bold" style="font-family: 'Source Sans Pro'">Bình luận-->
+                                                        <!--của bạn-->
+                                                        <!--({{form.postMessage.message.toString().length}}/200) ~-->
+                                                        <!--{{$store.state.ClientInfo.name}}</label>-->
+                                                    <!--<el-input type="textarea"-->
+                                                              <!--v-model="form.postMessage.message"></el-input>-->
+                                                    <!--<div class="text-right" style="margin-top:20px;">-->
+                                                        <!--<grebtn style="padding:10px; width:100px;" title="Gửi"-->
+                                                                <!--:loading="v.isSending"-->
+                                                                <!--type="submit"-->
+                                                                <!--:icon="true" iconClass="fa fa-send"></grebtn>-->
+                                                    <!--</div>-->
+                                                <!--</form>-->
+                                                <c-comment typeName="deal" :url_api="c_URL"  :_id="mainData._id" @callback="m_getListMessageOfCoupon"></c-comment>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -304,6 +305,9 @@
         beforeMount() {
             this.v.currentHref = window.location.href;
             this.m_getListMessageOfCoupon();
+        },
+        computed:{
+            c_URL(){ return process.env.API.Coupon_Comment}
         },
         methods: {
             m_showShopInfo(m) {

@@ -59,25 +59,26 @@ const createStore = () => {
             }
         },
         actions: {
-            // nuxtServerInit({commit}, {isServer,  query, redirect}) {
-            //     const cookieStr = inBrowser ? document.cookie : '';
-            //     const cookies = Cookie.parse(cookieStr || '') || {};
-            //     if (typeof cookies.AdminToken !== 'undefined') commit('updateAdminToken', cookies.AdminToken);
-            //     if (typeof cookies.ClientToken !== 'undefined') commit('updateClientToken', cookies.ClientToken);
-            //     if (typeof cookies.AdminInfo !== 'undefined') {
-            //         jwt.decode(process.env.jwt_KEY, cookies.AdminInfo, async (jwrError, jwtData) => {
-            //             if (!jwrError) await commit('updateAdminInfo', jwtData);
-            //         });
-            //     }
-            //     if (typeof cookies.ClientInfo !== 'undefined') {
-            //         jwt.decode(process.env.jwt_KEY, cookies.ClientInfo, async (jwrError, jwtData) => {
-            //             if (!jwrError) await commit('updateClientInfo', jwtData);
-            //         });
-            //     }
-            //     if (typeof cookies.AdminRole !== 'undefined') commit('updateAdminRole', cookies.AdminRole);
-            //     if (typeof cookies.ClientRole !== 'undefined') commit('updateClientRole', cookies.ClientRole);
-            //     if (typeof  cookies.currentLocation !== 'undefined' && cookies.currentLocation!=='undefined' && cookies.currentLocation.length>3) commit('updateCurrentLocation', JSON.parse(cookies.currentLocation));
-            // },
+            nuxtServerInit({commit}, {isServer, query, redirect,req}) {
+
+                const cookieStr = inBrowser ? document.cookie : req.headers.cookie;
+                const cookies = Cookie.parse(cookieStr || '') || {};
+                if (typeof cookies.AdminToken !== 'undefined') commit('updateAdminToken', cookies.AdminToken);
+                if (typeof cookies.ClientToken !== 'undefined') commit('updateClientToken', cookies.ClientToken);
+                if (typeof cookies.AdminInfo !== 'undefined') {
+                    jwt.decode(process.env.jwt_KEY, cookies.AdminInfo, async (jwrError, jwtData) => {
+                        if (!jwrError) await commit('updateAdminInfo', jwtData);
+                    });
+                }
+                if (typeof cookies.ClientInfo !== 'undefined') {
+                    jwt.decode(process.env.jwt_KEY, cookies.ClientInfo, async (jwrError, jwtData) => {
+                        if (!jwrError) await commit('updateClientInfo', jwtData);
+                    });
+                }
+                if (typeof cookies.AdminRole !== 'undefined') commit('updateAdminRole', cookies.AdminRole);
+                if (typeof cookies.ClientRole !== 'undefined') commit('updateClientRole', cookies.ClientRole);
+                if (typeof  cookies.currentLocation !== 'undefined' && cookies.currentLocation !== 'undefined' && cookies.currentLocation.length > 3) commit('updateCurrentLocation', JSON.parse(cookies.currentLocation));
+            },
         }
     })
 }

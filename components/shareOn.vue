@@ -59,7 +59,7 @@
     }
 </style>
 <template>
-    <div>
+    <div style="position: relative">
         <a id="shareGoogleButton" style="display: none;" :href="`https://plus.google.com/share?url=${currentLocation}`"
            @click="m_onShareGoogle">
         </a>

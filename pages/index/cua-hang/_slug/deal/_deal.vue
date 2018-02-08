@@ -81,7 +81,7 @@
                                              :clickable="true"
                                              :draggable="true"
                                              @click="center=m.position; m_showShopInfo(m)">
-                                    <gmap-info-window>
+                                    <gmap-info-window v-if="m.chain!==null">
                                         <table>
                                             <tbody>
                                             <tr>
@@ -143,22 +143,24 @@
                                                      style="width:50px; height:50px; border-radius: 50vh; margin:10px;">
                                             </td>
                                             <td>
-                                                <form @submit="m_postMessage($event)">
-                                                    <label class="bold" style="font-family: 'Source Sans Pro'">
-                                                        Bình luận
-                                                        của bạn
-                                                        ({{form.postMessage.message.toString().length}}/200) ~
-                                                        {{$store.state.ClientInfo.name}}
-                                                    </label>
-                                                    <el-input type="textarea"
-                                                              v-model="form.postMessage.message"></el-input>
-                                                    <div class="text-right" style="margin-top:20px;">
-                                                        <grebtn style="padding:10px; width:100px;" title="Gửi"
-                                                                :loading="v.isSending"
-                                                                type="submit"
-                                                                :icon="true" iconClass="fa fa-send"></grebtn>
-                                                    </div>
-                                                </form>
+                                                <!--<form @submit="m_postMessage($event)">-->
+                                                <!--<label class="bold" style="font-family: 'Source Sans Pro'">-->
+                                                <!--Bình luận-->
+                                                <!--của bạn-->
+                                                <!--({{form.postMessage.message.toString().length}}/200) ~-->
+                                                <!--{{$store.state.ClientInfo.name}}-->
+                                                <!--</label>-->
+                                                <!--<el-input type="textarea"-->
+                                                <!--v-model="form.postMessage.message"></el-input>-->
+                                                <!--<div class="text-right" style="margin-top:20px;">-->
+                                                <!--<grebtn style="padding:10px; width:100px;" title="Gửi"-->
+                                                <!--:loading="v.isSending"-->
+                                                <!--type="submit"-->
+                                                <!--:icon="true" iconClass="fa fa-send"></grebtn>-->
+                                                <!--</div>-->
+                                                <!--</form>-->
+                                                <c-comment typeName="deal" :url_api="c_URL" :_id="mainData._id"
+                                                           @callback="m_getListMessageOfCoupon"></c-comment>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -316,6 +318,9 @@
             }
         },
         computed: {
+            c_URL() {
+                return process.env.API.Deal_Comment
+            },
             finalPrice() {
                 if (this.mainData.type === 'percent') {
                     let currentPrice = parseInt(this.mainData.price);
@@ -331,7 +336,7 @@
         },
         beforeMount() {
             this.v.currentHref = window.location.href;
-            // this.m_getListMessageOfCoupon();
+            this.m_getListMessageOfCoupon();
 
         },
         methods: {

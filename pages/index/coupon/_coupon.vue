@@ -1,6 +1,5 @@
 <template>
     <div class="container" style="margin-top:20px;">
-
         <template v-if="true">
             <div style="padding:20px;" class="box" v-if="typeof comment.length>0">
                 <span><span class="material-icons">face</span>Opps! Coupon không tồn tại</span>
@@ -32,8 +31,8 @@
 
                                 <label class="lb_head">Hình ảnh</label>
                                 <div style="height:100px; overflow: hidden">
-                                    <div v-for="item in mainData.images"
-                                         @click="v.imageSource = `${img_base+item}`; v.dialogImageViewer = true"
+                                    <div v-for="item,index in mainData.images"
+                                         @click="v.imageSource = `${img_base+item}`; v.dialogImageViewer = true; v.initialIndex = index"
                                          :style="`background-image:url(${img_base+item}); `"
                                          class="imageClass"></div>
                                 </div>
@@ -137,21 +136,8 @@
                                                          style="width:50px; height:50px; border-radius: 50vh; margin:10px;">
                                                 </td>
                                                 <td>
-                                                    <form @submit="m_postMessage($event)">
-                                                        <label class="bold" style="font-family: 'Source Sans Pro'">Bình
-                                                            luận
-                                                            của bạn
-                                                            ({{form.postMessage.message.toString().length}}/200) ~
-                                                            {{$store.state.ClientInfo.name}}</label>
-                                                        <el-input type="textarea"
-                                                                  v-model="form.postMessage.message"></el-input>
-                                                        <div class="text-right" style="margin-top:20px;">
-                                                            <grebtn style="padding:10px; width:100px;" title="Gửi"
-                                                                    :loading="v.isSending"
-                                                                    type="submit"
-                                                                    :icon="true" iconClass="fa fa-send"></grebtn>
-                                                        </div>
-                                                    </form>
+                                                    <c-comment typeName="counpon" :url_api="m_URL" :_id="mainData._id"
+                                                               @callback="m_PostMessageCallback"></c-comment>
                                                 </td>
                                             </tr>
                                             </tbody>
@@ -173,9 +159,15 @@
                 </div>
 
             </div>
-            <el-dialog :visible.sync="v.dialogImageViewer" custom-class="noBorder" top="10px">
+            <el-dialog :visible.sync="v.dialogImageViewer" custom-class="noBorder" top="0px">
                 <div slot="title">
-                    <img :src="v.imageSource" style="width:100%;"></div>
+                    <el-carousel :autoplay="false" arrow="always" height="100vh" :initial-index="v.initialIndex">
+                        <el-carousel-item v-for="item in mainData.images" :key="item">
+                            <div class="imgCaro" style="height:100vh"
+                                 :style="`background-image:url(${img_base+item})`"></div>
+                        </el-carousel-item>
+                    </el-carousel>
+                </div>
             </el-dialog>
             <el-dialog :visible.sync="v.dialogShowCounpon" custom-class="noBorder" top="calc(50vh - 200px)">
                 <div slot="title">
@@ -263,10 +255,11 @@
 
             }
         },
-        async asyncData({app, query, route,store, params, redirect}) {
-            if (typeof query.c !== 'undefined') {
-                let CouponData = {};
-                await app.$axios.$get(process.env.API.Coupon_PublicGetDetail + query.c)
+        async asyncData({app, query, route, store, params, redirect}) {
+            let CouponData = {};
+            CouponData.a = params.coupon;
+            if (typeof params.coupon !== 'undefined') {
+                await app.$axios.$get(process.env.API.Coupon_PublicGetDetail + params.coupon)
                     .then(res => {
                         CouponData = res;
                     })
@@ -276,7 +269,7 @@
                 return {
                     mainData: CouponData,
                     comment: '',
-                    currentURLPath: '123123',
+                    currentURLPath: '',
                     ClientInfo: store.state.ClientInfo
                 }
             }
@@ -299,6 +292,7 @@
                     listComment: [],
                     dialogShowAlert: false,
                     OverCode: false,
+                    initialIndex: 0
                 },
                 form: {
                     postMessage: {
@@ -312,11 +306,19 @@
                 }
             }
         },
+        computed: {
+            m_URL() {
+                return process.env.API.Coupon_Comment;
+            }
+        },
         beforeMount() {
             this.v.currentHref = window.location.href;
             this.m_getListMessageOfCoupon();
         },
         methods: {
+            m_PostMessageCallback(e){
+                if (e) this.m_getListMessageOfCoupon();
+            },
             m_showShopInfo(m) {
 
             },

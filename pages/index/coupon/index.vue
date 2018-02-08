@@ -16,15 +16,17 @@
                 <h6 class="headText" style="margin-top:20px;">Tỉnh thành</h6>
                 <ul v-if="!mainData.isErrorGetCity"
                     style="margin:0; padding:0; list-style-type: none; margin-top:20px;">
+                    <li style="font-family: 'Open Sans'; font-size:14px;"
+                    <el-checkbox @change="m_changeSelectedAll" v-model="v.checkAll"></el-checkbox>
+                    Tất cả
+                    </li>
                     <li style="font-family: 'Open Sans'; font-size:14px;" v-for="item,index in mainData.listCity"
                         v-show="index<5 || index>=5 && v.showMoreListCity">
-                        <el-checkbox></el-checkbox>
+                        <el-checkbox v-model="mainData.listCity[index].checked"></el-checkbox>
                         {{item.name}}
                     </li>
-                    <li><a href="javascript:;" style="margin-top:10px;" v-if="!v.showMoreListCity"
-                           @click="v.showMoreListCity=true">Tất cả</a>
-                        <a href="javascript:;" style="margin-top:10px;" v-else @click="v.showMoreListCity=false">Ẩn
-                            bớt</a>
+                    <li><a href="javascript:;" class="green" style="margin-top:10px;" v-if="!v.showMoreListCity"
+                           @click="v.dialogMoreCity=true">Nhiều hơn</a>
                     </li>
                 </ul>
 
@@ -46,20 +48,53 @@
                             <div style="font-size:18px; max-height:50px;  height:50px; text-overflow: ellipsis; overflow: hidden">
                                 {{item.title}}
                             </div>
-
-
                         </div>
                         <div style="margin-top:8px;">
-                            <btn-code title="XEM" @click="$router.push(`/coupon/xem?c=${item.slug}`)"></btn-code>
+                            <btn-code title="XEM" @click="$router.push(`/coupon/${item.slug}`)"></btn-code>
                         </div>
                     </div>
                 </div>
 
-
             </template>
 
         </div>
-
+        <el-dialog :visible.sync="v.dialogMoreCity" :width="'500px'">
+            <table style="width:100%; padding-bottom:6px;">
+                <thead>
+                <tr>
+                    <th style="width:60px;  border-bottom: .5px dashed rgba(45,45,48,.2);">
+                        <el-checkbox v-model="v.checkAll" @change="m_changeSelectedAll"></el-checkbox>
+                    </th>
+                    <th style="font-size:15px;  border-bottom: .5px dashed rgba(45,45,48,.2);">Tỉnh / Thành Phố</th>
+                    <th class="text-right" style="width:210px;">
+                        <el-input placeholder="Tên tình thành cần tìm" style="width:200px;"
+                                  v-model="v.keywordCity"></el-input>
+                    </th>
+                </tr>
+                </thead>
+            </table>
+            <div style="height:300px; max-height:300px; overflow-y: scroll">
+                <table style="width:100%;">
+                    <tbody>
+                    <tr v-for="item,index in c_listCity">
+                        <td style="width:60px;">
+                            <el-checkbox v-model="mainData.listCity[item._index].checked"
+                                         @change="m_changeListObject"></el-checkbox>
+                        </td>
+                        <td style="font-size:15px;" colspan="2">{{item.name}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row" style="margin-top:10px;">
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    Chọn {{c_countSelectedCity}} / {{mainData.listCity.length}} tỉnh thành
+                </div>
+                <div class="col-sm-6 col-md-6 col-xs-6 text-right">
+                    <button class="btn" @click="v.dialogMoreCity = false">Xong</button>
+                </div>
+            </div>
+        </el-dialog>
     </div>
 </template>
 <script>
@@ -97,12 +132,33 @@
                 v: {
                     showMoreListCity: false,
                     keyword: '',
+                    checkAll: false,
+                    dialogMoreCity: false,
+                    keywordCity: '',
                 }
             }
         },
         computed: {
-            c_listCoupon()
-            {
+            c_countSelectedCity() {
+                let counter = 0;
+                this.mainData.listCity.forEach(e => {
+                    if (e.checked) counter++;
+                });
+                return counter;
+            },
+            c_listCity() {
+                let resData = [];
+                let keyword = this.CreateSlug(this.v.keywordCity.trim());
+                for (let i = 0; i < this.mainData.listCity.length; i++) {
+                    let itemPush = this.mainData.listCity[i];
+                    if (keyword.length === 0 || this.CreateSlug(itemPush.name).indexOf(keyword) !== -1) {
+                        itemPush._index = i;
+                        resData.push(itemPush);
+                    }
+                }
+                return resData;
+            },
+            c_listCoupon() {
                 let keyword = this.CreateSlug(this.v.keyword.trim());
                 if (keyword.length === 0) return this.mainData.listCoupon;
                 else {
@@ -112,6 +168,22 @@
                     })
                     return resData;
                 }
+            }
+        },
+        methods: {
+            m_changeSelectedAll(e) {
+                if (e)
+                    this.mainData.listCity.forEach((e, index) => {
+                        this.mainData.listCity[index].checked = true;
+                    })
+                else
+                    this.mainData.listCity.forEach((e, index) => {
+                        this.mainData.listCity[index].checked = false;
+                    })
+
+            },
+            m_changeListObject(e) {
+                if (this.c_countSelectedCity === this.mainData.listCity.length) this.v.checkAll = true;
             }
         }
     }

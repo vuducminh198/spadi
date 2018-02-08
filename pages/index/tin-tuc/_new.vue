@@ -34,49 +34,7 @@
                         BÌNH LUẬN
                     </p>
                     <div style="border-radius: 0; background-color:white; padding:20px;">
-                        <div class="white-block">
-                            <div class="white-block-content">
-                                <div id="respond" class="comment-respond">
-                                    <form class="comment-form">
-                                        <template
-                                                v-if="$store.state.ClientInfo.role!=='user' ||  $store.state.ClientToken!==null && $store.state.ClientToken.length<10">
-                                            <div class="input-group">
-                                                <label for="author">Họ tên<span class="required">*</span></label>
-                                                <input type="text" v-model="form.postMessage.name" class="form-control"
-                                                       name="author" id="author">
-                                                <i class="pline-user"></i>
-                                            </div>
-                                            <div class="input-group">
-                                                <label for="comment-email">Email<span class="required">*</span></label>
-                                                <input type="text" v-model="form.postMessage.email" class="form-control"
-                                                       name="email" id="comment-email">
-                                                <i class="pline-envelope"></i>
-                                            </div>
-                                        </template>
-                                        <template v-else>
-                                            <p><span style="color:#439A46;">{{$store.state.ClientInfo.name}}</span>, bạn
-                                                nghĩ gì
-                                                về bài viết này?</p>
-                                        </template>
-                                        <div class="input-group">
-                                            <label for="comment">Bình luận<span class="required">*</span></label>
-                                            <textarea class="form-control" v-model="form.postMessage.content"
-                                                      name="comment"
-                                                      id="comment"></textarea>
-                                            <i class="pline-message-cloud"></i>
-                                        </div>
-
-                                        <p class="form-submit">
-                                            <grebtn @click="m_sendComment($event)" title="Bình luận"
-                                                    :round="false" :loading="v.isLoading"
-                                                    style="max-width:200px;"></grebtn>
-
-                                        </p>
-                                    </form>
-                                </div><!-- #respond -->
-
-                            </div>
-                        </div>
+                        <c-comment typeName="bài viết" :url_api="c_URL" :_id="mainData.data._id"></c-comment>
                     </div>
                 </div>
             </div>
@@ -151,6 +109,9 @@
             }
         },
         computed: {
+            c_URL(){
+                return process.env.API.Post_Comment;
+            },
             date() {
                 let date = new Date(this.mainData.data.createdAt);
                 return date.getDate();
