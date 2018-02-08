@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa61335-83ac-47fd-8657-48e265a59e5c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" afterPath="$PROJECT_DIR$/.eslintrc.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/components/shareOn.vue" afterPath="$PROJECT_DIR$/components/shareOn.vue" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" afterPath="$PROJECT_DIR$/nuxt.config.js" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/pages/index/coupon/_coupon.vue" afterPath="$PROJECT_DIR$/pages/index/coupon/xem.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/coupon/index.vue" afterPath="$PROJECT_DIR$/pages/index/coupon/index.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/_slug/index.vue" afterPath="$PROJECT_DIR$/pages/index/cua-hang/_slug/index.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/_new.vue" afterPath="$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/_new.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/index.vue" afterPath="$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/index.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/dia-diem/index.vue" afterPath="$PROJECT_DIR$/pages/index/dia-diem/index.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/ex.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pages/index/tin-tuc/_new.vue" afterPath="$PROJECT_DIR$/pages/index/tin-tuc/_new.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/index/tin-tuc/index.vue" afterPath="$PROJECT_DIR$/pages/index/tin-tuc/index.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/index.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="134" column="105" lean-forward="true" selection-start-line="134" selection-start-column="100" selection-end-line="134" selection-end-column="105" />
+              <caret line="134" column="105" lean-forward="false" selection-start-line="134" selection-start-column="100" selection-end-line="134" selection-end-column="105" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -147,6 +133,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shareOn.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/shareOn.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="152" column="20" lean-forward="true" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -274,7 +270,6 @@
         <option value="$PROJECT_DIR$/pages/index.vue" />
         <option value="$PROJECT_DIR$/pages/index/dia-diem/index.vue" />
         <option value="$PROJECT_DIR$/pages/index/coupon/coupon.vue" />
-        <option value="$PROJECT_DIR$/components/shareOn.vue" />
         <option value="$PROJECT_DIR$/pages/index/coupon/index.vue" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/nuxt.config.js" />
@@ -283,6 +278,7 @@
         <option value="$PROJECT_DIR$/pages/index/tin-tuc/_new.vue" />
         <option value="$PROJECT_DIR$/pages/index/cua-hang/_slug/tin-tuc/_new.vue" />
         <option value="$PROJECT_DIR$/pages/index/cua-hang/_slug/index.vue" />
+        <option value="$PROJECT_DIR$/components/shareOn.vue" />
       </list>
     </option>
   </component>
@@ -367,35 +363,7 @@
             <path>
               <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
               <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cua-hang" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cua-hang" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_slug" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spadishop" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tin-tuc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="spadishop" type="b2602c69:ProjectViewProjectNode" />
@@ -540,12 +508,12 @@
       <workItem from="1517966670534" duration="117000" />
       <workItem from="1517978481556" duration="2951000" />
       <workItem from="1517998687672" duration="1350000" />
-      <workItem from="1518059394611" duration="3858000" />
+      <workItem from="1518059394611" duration="4511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="487023000" />
+    <option name="totallyTimeSpent" value="487676000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -871,16 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/shareOn.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2080">
-          <caret line="130" column="10" lean-forward="false" selection-start-line="130" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
-          <folding>
-            <element signature="e#3641#4855#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1808">
@@ -1011,7 +969,7 @@
     <entry file="file://$PROJECT_DIR$/pages/index/cua-hang/_slug/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="134" column="105" lean-forward="true" selection-start-line="134" selection-start-column="100" selection-end-line="134" selection-end-column="105" />
+          <caret line="134" column="105" lean-forward="false" selection-start-line="134" selection-start-column="100" selection-end-line="134" selection-end-column="105" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -1021,6 +979,14 @@
             <element signature="e#10168#10458#0" expanded="false" />
             <element signature="e#10496#10609#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/shareOn.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="152" column="20" lean-forward="true" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

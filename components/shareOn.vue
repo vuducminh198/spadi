@@ -144,13 +144,13 @@
                 return false;
             },
             m_shareOn(type) {
-                console.log(type);
+
                 if (type === 'google')
-                    $('#shareGoogleButton').click();
+                    this.m_onShareGoogle();
                 if (type === 'facebook')
-                    $('#shareFacebookButton').click();
+                   this.m_onShareFacebook();
                 if (type === 'twitter')
-                    $('#shareTwitterButton').click();
+                    this.m_onShareTwitter();
                 if (type === 'instagram')
                     this.$notify({
                         title: 'Opps',
