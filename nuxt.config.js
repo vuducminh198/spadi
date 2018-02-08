@@ -107,15 +107,15 @@ module.exports = {
             meta: [
                 {charset: 'utf-8'},
                 {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-                {name: 'description', content: 'Mô tả'},
-                {name: 'og:locale', content: 'vi_VN'},
-                {name: 'og:type', content: 'article'},
-                {name: 'og:title', content: 'Spadi.vn | Coupon, Deal miễn phí'},
-                {name: 'og:description', content: ''},
-                {name: 'og:site_name', content: 'Spadi.vn'},
-                {name: 'og:image', content: ''},
-                {name: 'og:image:width', content: '650'},
-                {name: 'og:image:height', content: '650'},
+                {hid:'description',name: 'description', content: 'Mô tả'},
+                {hid:'og:locale',name: 'og:locale', content: 'vi_VN'},
+                {hid:'og:type',name: 'og:type', content: 'article'},
+                {hid:'og:title',name: 'og:title', content: 'Spadi.vn | Coupon, Deal miễn phí'},
+                {hid:'og:description',name: 'og:description', content: ''},
+                {hid:'og:site_name',name: 'og:site_name', content: 'Spadi.vn'},
+                {hid:'og:image',name: 'og:image', content: 'https://www.omnihotels.com/-/media/images/globals/spa/facial-86487979.jpg?h=660&la=en&w=1170'},
+                {hid:'og:image:width',name: 'og:image:width', content: '650'},
+                {hid:'og:image:height',name: 'og:image:height', content: '650'},
             ],
             link: [
                 {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
@@ -156,15 +156,20 @@ module.exports = {
     ],
 
     build: {
-        publicPath: '/dist/',
         vendor: ['vue-quill-editor', 'element-ui', 'vue-js-modal', 'axios'],
+        extractCSS: true,
         babel: {
-            'presets': ['vue-app'],
+            'presets': ['vue-app','es2015','stage-0'],
             'plugins': [
                 ['component', [{
                     'libraryName': 'element-ui',
                     'styleLibraryName': 'theme-chalk'
-                }]]
+                }],
+                ["transform-runtime",{
+                    "polyfill":true,
+                    "regenerator":true
+                }]
+            ]
             ],
             'comments': false
         },

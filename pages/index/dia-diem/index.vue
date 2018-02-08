@@ -227,10 +227,13 @@
                         <div style="clear: both"></div>
                     </template>
                 </template>
-                <p v-if="v.keyword.trim().length>0" class="bold" style="font-family: 'Source Sans Pro'">Hiển thị kết quả cho từ khóa: {{v.keyword}}</p>
+                <p v-if="v.keyword.trim().length>0" class="bold" style="font-family: 'Source Sans Pro'">Hiển thị kết quả
+                    cho từ khóa: {{v.keyword}}</p>
                 <div v-if="v.selectedTypeObject==='all' || v.selectedTypeObject==='deal'" style="margin-top:20px;">
-                    <label style="font-size:24px; padding-left:5px;" v-if="v.listDeal.length>0">DEAL</label>
+                    <template v-if="v.listDeal.length>0">
+                    <label style="font-size:24px; padding-left:5px;" >DEAL</label>
                     <a href="javascript:;" class="greenLink" @click="$router.push('/deal')">Tất cả</a><br>
+                    </template>
                     <div>
                         <div class="col-md-3 col-sm-6 col-xs-6" style="padding-left:0px; padding-right:5px;"
                              v-for="item in c_listDeal">
@@ -280,11 +283,13 @@
 
                     <div v-if="v.selectedTypeObject==='all' || v.selectedTypeObject==='coupon'"
                          style="margin-top:20px;">
-                        <label style="font-size:24px; padding-left:5px;" v-if="v.listCoupon.length>0">COUPON</label><a
-                            href="javascript:;"
-                            class="greenLink"
-                            @click="$router.push('/coupon')">Tất
-                        cả</a><br>
+                        <template v-if="v.listCoupon.length>0">
+                            <label style="font-size:24px; padding-left:5px;">COUPON</label><a
+                                href="javascript:;"
+                                class="greenLink"
+                                @click="$router.push('/coupon')">Tất
+                            cả</a><br>
+                        </template>
                         <div>
                             <div class="col-md-3 col-sm-6 col-xs-6" style="padding-left:7.5px; padding-right:7.5px;"
                                  v-for="item in c_listCoupon">
@@ -379,7 +384,7 @@
             }
         },
         beforeMount() {
-            this.v.currentLocation =   JSON.parse(JSON.stringify( this.$store.state.currentLocation));
+            this.v.currentLocation = JSON.parse(JSON.stringify(this.$store.state.currentLocation));
             this.m_getListCity();
         },
         methods: {

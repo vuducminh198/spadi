@@ -48,9 +48,9 @@
                             </div>
 
 
-                            <div style="margin-top:8px;">
-                                <btn-code title="XEM" @click="$router.push(`/coupon/${item.slug}`)"></btn-code>
-                            </div>
+                        </div>
+                        <div style="margin-top:8px;">
+                            <btn-code title="XEM" @click="$router.push(`/coupon/xem?c=${item.slug}`)"></btn-code>
                         </div>
                     </div>
                 </div>

@@ -4,18 +4,27 @@
             <div class="col-sm-8">
                 <div style="padding:10px; background-color:white;">
                     <img :src="img_base +mainData.data.mainImg" style="width:100%;"/>
-                    <div >
+                    <div>
                         <h2 style="font-family: 'Open Sans'">{{mainData.data.title}}</h2>
-                        <span style="font-size:13px;">Lúc {{mainData.data.createdAt}}</span>
+                        <span style="font-size:13px;">Lúc {{mainData.data.createdAt | fullTime}}</span>
                         <div v-html="mainData.data.content" style="margin-top:20px; font-family: 'Open Sans'"></div>
                         <div>
-                            <span class="material-icons">label_outline</span>
-                            <span style="font-family: 'Open Sans'; font-size:14px;"
-                                  v-for="item,index in mainData.data.tag">
-                                    <template v-if="index!==0">,</template>
-                                {{item}}
-                            </span>
-                        </span>
+                            <table style="width:100%;">
+                                <tbody>
+                                <tr>
+                                    <td style="width:20px;"><span class="material-icons">label_outline</span></td>
+                                    <td>
+                                        <template v-for="item,index in mainData.data.tags">
+                                            <span v-if="index!==0" style="background-color:white; margin: 3px;">,</span>
+                                            <span style="font-family: 'Open Sans'; background-color:whitesmoke; border-radius: 4px; padding:3px; font-size:14px;">
+                                         {{item}}
+                                             </span>
+
+                                        </template>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
 
                         </div>
                     </div>
@@ -45,7 +54,8 @@
                                             </div>
                                         </template>
                                         <template v-else>
-                                            <p><span style="color:#439A46;">{{$store.state.ClientInfo.name}}</span>, bạn nghĩ gì
+                                            <p><span style="color:#439A46;">{{$store.state.ClientInfo.name}}</span>, bạn
+                                                nghĩ gì
                                                 về bài viết này?</p>
                                         </template>
                                         <div class="input-group">
@@ -93,6 +103,7 @@
     import axios from 'axios'
 
     export default {
+        scrollToTop: true,
         async asyncData({route, redirect}) {
             let mainData = {};
             await axios.get(process.env.API.Post_GetPublicByData + route.params.new)

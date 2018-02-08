@@ -61,17 +61,16 @@
 <template>
     <div>
         <a id="shareGoogleButton" style="display: none;" :href="`https://plus.google.com/share?url=${currentLocation}`"
-           onclick="javascript:window.open(this.href,
-  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+           @click="m_onShareGoogle">
         </a>
         <a id="shareFacebookButton" style="display: none;"
            :href="`https://www.facebook.com/sharer/sharer.php?u=${currentLocation}`"
-           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+           @click="m_onShareFacebook"
            target="_blank" title="Share on Facebook">
         </a>
         <a id="shareTwitterButton" style="display: none;"
            :href="`https://twitter.com/share?url=${currentLocation}`"
-           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+           @click="m_onShareTwitter"
            target="_blank" title="Share on Twitter">
         </a>
         <label>Chia sẻ</label>
@@ -118,17 +117,32 @@
     import $ from 'jquery';
 
     export default {
-
+        data() {
+            return {
+                currentLocation: ''
+            }
+        },
         beforeMount() {
 
 
         },
-        computed: {
-            currentLocation() {
-                return window.location.href;
-            }
+        mounted() {
+            this.currentLocation = window.location.href;
         },
         methods: {
+            m_onShareGoogle() {
+                window.open(this.href,
+                    '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+                return false;
+            },
+            m_onShareFacebook() {
+                window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+                return false;
+            },
+            m_onShareTwitter() {
+                window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+                return false;
+            },
             m_shareOn(type) {
                 console.log(type);
                 if (type === 'google')

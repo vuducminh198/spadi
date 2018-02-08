@@ -57,10 +57,11 @@
     import axios from 'axios'
 
     export default {
+        scrollToTop:true,
         name: 'home-tintuc',
-        async asyncData({redirect}) {
+        async asyncData({redirect,app}) {
             let mainData = {};
-            await axios.get(process.env.API.Post_GetListPublic)
+            await app.$axios.get(process.env.API.Post_GetListPublic)
                 .then(res => {
                     mainData.listPost = res.data;
                     mainData.isError = false;

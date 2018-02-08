@@ -12,17 +12,25 @@
                     </div>
                 </div>
                 <div style="flex: 8; font-family: 'Open Sans'">
-                    <h2 style="font-family: 'Open Sans'">{{mainData.data.title}}</h2>
+                    <h2 style="font-family: 'Open Sans'; margin-top:30px;">{{mainData.data.title}}</h2>
                     <div v-html="mainData.data.content" style="font-family: 'Open Sans'"></div>
                     <div>
-                        <span class="material-icons">label_outline</span>
-                        <span>
-                            <span style="font-family: 'Open Sans'; font-size:14px;"
-                                  v-for="item,index in mainData.data.tag">
-                                    <template v-if="index!==0">,</template>
-                                {{item}}
-                            </span>
-                        </span>
+                        <table style="width:100%;">
+                            <tbody>
+                            <tr>
+                                <td style="width:20px;"><span class="material-icons">label_outline</span></td>
+                                <td>
+                                    <template v-for="item,index in mainData.data.tags">
+                                        <span v-if="index!==0" style="background-color:white; margin: 3px;">,</span>
+                                        <span style="font-family: 'Open Sans'; background-color:whitesmoke; border-radius: 4px; padding:3px; font-size:14px;">
+                                         {{item}}
+                                             </span>
+
+                                    </template>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -101,16 +109,16 @@
             return {
                 title: this.mainData.data.title + ' | Spadi.vn',
                 meta: [
-                    {name: 'description', content: this.mainData.data.description},
-                    {name: 'og:locale', content: 'vi_VN'},
-                    {name: 'og:type', content: 'article'},
-                    {name: 'og:title', content: this.mainData.data.title},
-                    {name: 'og:description', content: this.mainData.data.description},
-                    {name: 'og:url', content: this.currentURLPath},
-                    {name: 'og:site_name', content: this.mainData.data.title},
-                    {name: 'og:image', content: process.env.IMAGE_BASE + this.mainData.data.mainImg},
-                    {name: 'og:image:width', content: '650'},
-                    {name: 'og:image:height', content: '650'},
+                    {hid:'description', name: 'description', content: this.mainData.data.description},
+                    {hid:'og:locale',name: 'og:locale', content: 'vi_VN'},
+                    {hid:'og:type',name: 'og:type', content: 'article'},
+                    {hid:'og:title',name: 'og:title', content: this.mainData.data.title},
+                    {hid:'og:description',name: 'og:description', content: this.mainData.data.description},
+                    {hid:'og:url',name: 'og:url', content: this.currentURLPath},
+                    {hid:'og:site_name',name: 'og:site_name', content: this.mainData.data.title},
+                    {hid:'og:image',name: 'og:image', content: process.env.IMAGE_BASE + this.mainData.data.mainImg},
+                    {hid:'og:image:width',name: 'og:image:width', content: '650'},
+                    {hid:'og:image:height',name: 'og:image:height', content: '650'},
 
                 ],
             }
